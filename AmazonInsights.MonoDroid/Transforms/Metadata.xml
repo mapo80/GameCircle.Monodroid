@@ -1,0 +1,26 @@
+<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr
+	 path="/api/package[@name='com.amazon.insights.error']/class[@name='BaseInsightsError']"
+	name="visibility">public</attr>
+<!--  <attr
+	path="/api/package[@name='com.amazon.insights.core.system']/interface[@name='System']"
+	name="managedName">SystemN</attr>-->
+  <attr
+	path="/api/package[@name='com.amazon.insights.core.system']"
+	name="managedName">com.amazon.insights.core.system.amazon</attr>
+	<attr path="/api/package[@name='com.amazon.insights.profile']/class[@name='DefaultUserProfile']/method[@name='compareTo']/parameter[1]" name="managedType">Java.Lang.Object</attr>
+  <attr
+    path="/api/package[@name='com.amazon.insights.event']/class[@name='DefaultEvent']/method[@name='withAttribute' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]"
+    name="managedReturn">Com.Amazon.Insights.IEvent</attr>
+  <attr
+    path="/api/package[@name='com.amazon.insights.event']/class[@name='DefaultEvent']/method[@name='withMetric' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.Number']]"
+    name="managedReturn">Com.Amazon.Insights.IEvent</attr>
+
+</metadata>

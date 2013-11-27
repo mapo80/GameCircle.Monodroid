@@ -1,0 +1,57 @@
+<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  <attr path="/api/package[@name='com.amazon.ags.html5.factory']" name="AGSClientInstanceCoordinator">Test</attr>
+  <attr path="/api/package[@name='com.amazon.ags.html5.factory']/class[@name='AGSClientInstanceCoordinator']">Test</attr>
+  -->
+<!--  <attr
+          path="/api/package[@name='org.achartengine.tools']/class[@name='Pan']"
+          name="managedName"
+          >PanWrapper</attr>-->
+          
+<!--  <attr
+          path="/api/package[@name='org.achartengine.tools']/class[@name='Pan']/method[@name='addPanListener']"
+          name="eventName"
+  >Panned</attr>-->
+
+<!--  <attr
+          path="/api/package[@name='org.achartengine.tools']/class[@name='Pan']"
+          name="managedName"
+          >PanWrapper</attr>-->
+<attr
+	path="/api/package[@name='com.amazon.ags.html5.factory']/class[@name='AGSClientInstanceCoordinator']"
+	name="managedName"
+	>AGSClientInstanceCoordinatorWrapper</attr>
+<attr
+	path="/api/package[@name='com.amazon.ags.html5.comm']/class[@name='NetworkCallFactory']/method[@name='handleMessage']" 
+	name="visibility">protected</attr>
+
+	<attr path="/api/package[@name='com.amazon.ags.html5.content']/class[@name='ContentVersion']/method[@name='compareTo']/parameter[1]" name="managedType">Java.Lang.Object</attr>
+	<attr path="/api/package[@name='com.amazon.ags.client.whispersync']/class[@name='GameDataSingleMap']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.amazon.ags.client.whispersync.model']/interface[@name='Mergeable']" name="visibility">public</attr>
+
+
+<!--	<attr path="/api/package[@name='com.amazon.ags.client.whispersync.model']/class[@name='NumberList']" name="visibility">public</attr>-->
+
+<!--	<attr
+    path="/api/package[@name='com.amazon.ags.client.whispersync']/class[@name='GameDataSingleMap']/method[@name='deepCopy']"
+    name="managedReturn">Java.Lang.Object</attr>-->
+
+	<!--	<attr  path="/api/package[@name='com.amazon.ags.client.whispersync.model']/interface[@name='Mergeable']" name="extends">test</attr>-->
+<!--	<attr path="/api/package[@name='com.amazon.ags.client.whispersync']/class[@name='GameDataSingleMap']" name="managedType">Java.Lang.Object</attr>-->
+
+<!--	<attr path="/api/package[@name='com.amazon.ags.client.whispersync']/class[@name='GameDataSingleMap']/method[@name='merge']/parameter[1]" name="managedType">Com.Amazon.Ags.Client.Whispersync.GameDataSingleMap</attr>-->
+<!--	<attr path="/api/package[@name='com.amazon.ags.client.whispersync']/class[@name='GameDataSingleMap']/method[@name='merge']/parameter[1]" name="managedType">Java.Lang.Object</attr>-->
+	<!--	<attr path="/api/package[@name='com.amazon.ags.client.whispersync']/class[@name='GameDataSingleMap']/method[@name='merge']/parameter[1]" name="managedType">Java.Lang.Object</attr>-->
+<!--	<attr path="/api/package[@name='com.amazon.ags.client.whispersync']/class[@name='GameDataSingleMap']/method[@name='deepCopy']" name="managedType"
+	>Java.Lang.Object</attr>-->
+
+<!--	<attr path="/api/package[@name='com.amazon.ags.client.whispersync']/class[@name='GameDataSingleMap']/method[@name='deepCopy']" name="managedType">Java.Lang.Object</attr>-->
+<!--<attr path="/api/package[@name='com.amazon.ags.client.whispersync']/class[@name='GameDataSingleMap']/method[@name='merge']/parameter[1]" name="managedType">Java.Lang.Object</attr>-->
+
+<!--<attr path="/api/package[@name='com.amazon.ags.client.whispersync']/class[@name='GameDataSingleMap']/method[@name='merge']/parameter[1]" name="managedType">Com.Amazon.Ags.Client.Whispersync.IInternalGameDataMap</attr>-->
+	</metadata>

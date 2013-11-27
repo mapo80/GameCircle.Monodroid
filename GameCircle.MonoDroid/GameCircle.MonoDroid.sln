@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameCircle.MonoDroid", "GameCircle.MonoDroid.csproj", "{689930BE-C3A5-4077-86BE-B6AD1479A32E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonLogin.MonoDroid", "..\AmazonLogin.MonoDroid\AmazonLogin.MonoDroid.csproj", "{63534ADA-BBC0-472A-A8C0-47DF6D1979E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonInsights.MonoDroid", "..\AmazonInsights.MonoDroid\AmazonInsights.MonoDroid.csproj", "{F8BB3F84-0A43-4F62-9BA4-F9C965D7538A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63534ADA-BBC0-472A-A8C0-47DF6D1979E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63534ADA-BBC0-472A-A8C0-47DF6D1979E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63534ADA-BBC0-472A-A8C0-47DF6D1979E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63534ADA-BBC0-472A-A8C0-47DF6D1979E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{689930BE-C3A5-4077-86BE-B6AD1479A32E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{689930BE-C3A5-4077-86BE-B6AD1479A32E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{689930BE-C3A5-4077-86BE-B6AD1479A32E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{689930BE-C3A5-4077-86BE-B6AD1479A32E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8BB3F84-0A43-4F62-9BA4-F9C965D7538A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8BB3F84-0A43-4F62-9BA4-F9C965D7538A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8BB3F84-0A43-4F62-9BA4-F9C965D7538A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8BB3F84-0A43-4F62-9BA4-F9C965D7538A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ..\AmazonInsights.MonoDroid\AmazonInsights.MonoDroid.csproj
+	EndGlobalSection
+EndGlobal
