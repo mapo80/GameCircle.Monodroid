@@ -1,9 +1,3 @@
-/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.MonoDroid/GameCircle.MonoDroid/obj/Debug/MonoAndroid,Version=v2.3.AssemblyAttribute.cs
-/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.MonoDroid/GameCircle.MonoDroid/obj/Debug/GameCircle.MonoDroid.Jars.gamecirclesdk.jar
-/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.MonoDroid/GameCircle.MonoDroid/bin/Debug/GameCircle.MonoDroid.dll.mdb
-/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.MonoDroid/GameCircle.MonoDroid/bin/Debug/GameCircle.MonoDroid.dll
-/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.MonoDroid/GameCircle.MonoDroid/obj/Debug/GameCircle.MonoDroid.dll
-/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.MonoDroid/GameCircle.MonoDroid/obj/Debug/GameCircle.MonoDroid.dll.mdb
 /Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/obj/Debug/MonoAndroid,Version=v2.3.AssemblyAttribute.cs
 /Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/obj/Debug/GameCircle.MonoDroid.Jars.gamecirclesdk.jar
 /Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/bin/Debug/GameCircle.MonoDroid.dll.mdb
