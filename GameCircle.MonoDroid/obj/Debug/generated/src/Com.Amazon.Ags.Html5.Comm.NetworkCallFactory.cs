@@ -140,6 +140,30 @@ namespace Com.Amazon.Ags.Html5.Comm {
 
 		protected NetworkCallFactory (IntPtr javaReference, JniHandleOwnership transfer) : base (javaReference, transfer) {}
 
+		static IntPtr id_ctor_Lcom_amazon_ags_auth_AuthManager_Landroid_os_Handler_Lcom_amazon_ags_html5_util_GlobalState_Lcom_amazon_ags_html5_util_LocalizationUtil_Lcom_amazon_ags_html5_comm_NetworkClient_;
+		// Metadata.xml XPath constructor reference: path="/api/package[@name='com.amazon.ags.html5.comm']/class[@name='NetworkCallFactory']/constructor[@name='NetworkCallFactory' and count(parameter)=5 and parameter[1][@type='com.amazon.ags.auth.AuthManager'] and parameter[2][@type='android.os.Handler'] and parameter[3][@type='com.amazon.ags.html5.util.GlobalState'] and parameter[4][@type='com.amazon.ags.html5.util.LocalizationUtil'] and parameter[5][@type='com.amazon.ags.html5.comm.NetworkClient']]"
+		[Register (".ctor", "(Lcom/amazon/ags/auth/AuthManager;Landroid/os/Handler;Lcom/amazon/ags/html5/util/GlobalState;Lcom/amazon/ags/html5/util/LocalizationUtil;Lcom/amazon/ags/html5/comm/NetworkClient;)V", "")]
+		public NetworkCallFactory (global::Com.Amazon.Ags.Auth.AuthManager p0, global::Android.OS.Handler p1, global::Com.Amazon.Ags.Html5.Util.GlobalState p2, global::Com.Amazon.Ags.Html5.Util.LocalizationUtil p3, global::Com.Amazon.Ags.Html5.Comm.INetworkClient p4) : base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
+		{
+			if (Handle != IntPtr.Zero)
+				return;
+
+			if (GetType () != typeof (NetworkCallFactory)) {
+				SetHandle (
+						global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "(Lcom/amazon/ags/auth/AuthManager;Landroid/os/Handler;Lcom/amazon/ags/html5/util/GlobalState;Lcom/amazon/ags/html5/util/LocalizationUtil;Lcom/amazon/ags/html5/comm/NetworkClient;)V", new JValue (p0), new JValue (p1), new JValue (p2), new JValue (p3), new JValue (p4)),
+						JniHandleOwnership.TransferLocalRef);
+				global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "(Lcom/amazon/ags/auth/AuthManager;Landroid/os/Handler;Lcom/amazon/ags/html5/util/GlobalState;Lcom/amazon/ags/html5/util/LocalizationUtil;Lcom/amazon/ags/html5/comm/NetworkClient;)V", new JValue (p0), new JValue (p1), new JValue (p2), new JValue (p3), new JValue (p4));
+				return;
+			}
+
+			if (id_ctor_Lcom_amazon_ags_auth_AuthManager_Landroid_os_Handler_Lcom_amazon_ags_html5_util_GlobalState_Lcom_amazon_ags_html5_util_LocalizationUtil_Lcom_amazon_ags_html5_comm_NetworkClient_ == IntPtr.Zero)
+				id_ctor_Lcom_amazon_ags_auth_AuthManager_Landroid_os_Handler_Lcom_amazon_ags_html5_util_GlobalState_Lcom_amazon_ags_html5_util_LocalizationUtil_Lcom_amazon_ags_html5_comm_NetworkClient_ = JNIEnv.GetMethodID (class_ref, "<init>", "(Lcom/amazon/ags/auth/AuthManager;Landroid/os/Handler;Lcom/amazon/ags/html5/util/GlobalState;Lcom/amazon/ags/html5/util/LocalizationUtil;Lcom/amazon/ags/html5/comm/NetworkClient;)V");
+			SetHandle (
+					global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor_Lcom_amazon_ags_auth_AuthManager_Landroid_os_Handler_Lcom_amazon_ags_html5_util_GlobalState_Lcom_amazon_ags_html5_util_LocalizationUtil_Lcom_amazon_ags_html5_comm_NetworkClient_, new JValue (p0), new JValue (p1), new JValue (p2), new JValue (p3), new JValue (p4)),
+					JniHandleOwnership.TransferLocalRef);
+			JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Lcom_amazon_ags_auth_AuthManager_Landroid_os_Handler_Lcom_amazon_ags_html5_util_GlobalState_Lcom_amazon_ags_html5_util_LocalizationUtil_Lcom_amazon_ags_html5_comm_NetworkClient_, new JValue (p0), new JValue (p1), new JValue (p2), new JValue (p3), new JValue (p4));
+		}
+
 		static Delegate cb_handleMessage_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_;
 #pragma warning disable 0169
 		static Delegate GetHandleMessage_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Handler ()

@@ -60,4 +60,8 @@
   <ItemGroup>
     <EmbeddedJar Include="Jars\gamecirclesdk.jar" />
   </ItemGroup>
+  <ItemGroup>
+    <ReferenceJar Include="Jars\login-with-amazon-sdk.jar" />
+    <ReferenceJar Include="Jars\AmazonInsights-android-sdk-2.0.24.jar" />
+  </ItemGroup>
 </Project>

@@ -49,6 +49,16 @@ namespace Com.Amazon.Ags.Jni.Achievements {
 			JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor);
 		}
 
+		static IntPtr id_initializeNativeHandler_Lcom_amazon_ags_api_AmazonGamesClient_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.jni.achievements']/class[@name='AchievementsNativeHandler']/method[@name='initializeNativeHandler' and count(parameter)=1 and parameter[1][@type='com.amazon.ags.api.AmazonGamesClient']]"
+		[Register ("initializeNativeHandler", "(Lcom/amazon/ags/api/AmazonGamesClient;)V", "")]
+		public static void InitializeNativeHandler (global::Com.Amazon.Ags.Api.AmazonGamesClient p0)
+		{
+			if (id_initializeNativeHandler_Lcom_amazon_ags_api_AmazonGamesClient_ == IntPtr.Zero)
+				id_initializeNativeHandler_Lcom_amazon_ags_api_AmazonGamesClient_ = JNIEnv.GetStaticMethodID (class_ref, "initializeNativeHandler", "(Lcom/amazon/ags/api/AmazonGamesClient;)V");
+			JNIEnv.CallStaticVoidMethod  (class_ref, id_initializeNativeHandler_Lcom_amazon_ags_api_AmazonGamesClient_, new JValue (p0));
+		}
+
 		static IntPtr id_requestAchievement_Ljava_lang_String_IJ;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.jni.achievements']/class[@name='AchievementsNativeHandler']/method[@name='requestAchievement' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='int'] and parameter[3][@type='long']]"
 		[Register ("requestAchievement", "(Ljava/lang/String;IJ)V", "")]

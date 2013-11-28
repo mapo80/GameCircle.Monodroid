@@ -7,6 +7,7 @@
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.ags.api.whispersync", Managed="Com.Amazon.Ags.Api.Whispersync")]
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.ags.api.whispersync.migration", Managed="Com.Amazon.Ags.Api.Whispersync.Migration")]
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.ags.api.whispersync.model", Managed="Com.Amazon.Ags.Api.Whispersync.Model")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.ags.auth", Managed="Com.Amazon.Ags.Auth")]
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.ags.client", Managed="Com.Amazon.Ags.Client")]
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.ags.client.achievements", Managed="Com.Amazon.Ags.Client.Achievements")]
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.ags.client.leaderboards", Managed="Com.Amazon.Ags.Client.Leaderboards")]

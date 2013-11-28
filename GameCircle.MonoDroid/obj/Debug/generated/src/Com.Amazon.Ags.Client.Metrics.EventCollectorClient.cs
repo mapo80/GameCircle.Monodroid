@@ -25,6 +25,30 @@ namespace Com.Amazon.Ags.Client.Metrics {
 
 		protected EventCollectorClient (IntPtr javaReference, JniHandleOwnership transfer) : base (javaReference, transfer) {}
 
+		static IntPtr id_ctor_Lcom_amazon_ags_client_metrics_EventCollector_Lcom_amazon_ags_html5_util_GlobalState_Lcom_amazon_ags_auth_AuthManager_Lcom_amazon_ags_html5_content_ContentVersion_Lcom_amazon_ags_html5_util_DeviceInfo_;
+		// Metadata.xml XPath constructor reference: path="/api/package[@name='com.amazon.ags.client.metrics']/class[@name='EventCollectorClient']/constructor[@name='EventCollectorClient' and count(parameter)=5 and parameter[1][@type='com.amazon.ags.client.metrics.EventCollector'] and parameter[2][@type='com.amazon.ags.html5.util.GlobalState'] and parameter[3][@type='com.amazon.ags.auth.AuthManager'] and parameter[4][@type='com.amazon.ags.html5.content.ContentVersion'] and parameter[5][@type='com.amazon.ags.html5.util.DeviceInfo']]"
+		[Register (".ctor", "(Lcom/amazon/ags/client/metrics/EventCollector;Lcom/amazon/ags/html5/util/GlobalState;Lcom/amazon/ags/auth/AuthManager;Lcom/amazon/ags/html5/content/ContentVersion;Lcom/amazon/ags/html5/util/DeviceInfo;)V", "")]
+		public EventCollectorClient (global::Com.Amazon.Ags.Client.Metrics.IEventCollector p0, global::Com.Amazon.Ags.Html5.Util.GlobalState p1, global::Com.Amazon.Ags.Auth.AuthManager p2, global::Com.Amazon.Ags.Html5.Content.ContentVersion p3, global::Com.Amazon.Ags.Html5.Util.DeviceInfo p4) : base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
+		{
+			if (Handle != IntPtr.Zero)
+				return;
+
+			if (GetType () != typeof (EventCollectorClient)) {
+				SetHandle (
+						global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "(Lcom/amazon/ags/client/metrics/EventCollector;Lcom/amazon/ags/html5/util/GlobalState;Lcom/amazon/ags/auth/AuthManager;Lcom/amazon/ags/html5/content/ContentVersion;Lcom/amazon/ags/html5/util/DeviceInfo;)V", new JValue (p0), new JValue (p1), new JValue (p2), new JValue (p3), new JValue (p4)),
+						JniHandleOwnership.TransferLocalRef);
+				global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "(Lcom/amazon/ags/client/metrics/EventCollector;Lcom/amazon/ags/html5/util/GlobalState;Lcom/amazon/ags/auth/AuthManager;Lcom/amazon/ags/html5/content/ContentVersion;Lcom/amazon/ags/html5/util/DeviceInfo;)V", new JValue (p0), new JValue (p1), new JValue (p2), new JValue (p3), new JValue (p4));
+				return;
+			}
+
+			if (id_ctor_Lcom_amazon_ags_client_metrics_EventCollector_Lcom_amazon_ags_html5_util_GlobalState_Lcom_amazon_ags_auth_AuthManager_Lcom_amazon_ags_html5_content_ContentVersion_Lcom_amazon_ags_html5_util_DeviceInfo_ == IntPtr.Zero)
+				id_ctor_Lcom_amazon_ags_client_metrics_EventCollector_Lcom_amazon_ags_html5_util_GlobalState_Lcom_amazon_ags_auth_AuthManager_Lcom_amazon_ags_html5_content_ContentVersion_Lcom_amazon_ags_html5_util_DeviceInfo_ = JNIEnv.GetMethodID (class_ref, "<init>", "(Lcom/amazon/ags/client/metrics/EventCollector;Lcom/amazon/ags/html5/util/GlobalState;Lcom/amazon/ags/auth/AuthManager;Lcom/amazon/ags/html5/content/ContentVersion;Lcom/amazon/ags/html5/util/DeviceInfo;)V");
+			SetHandle (
+					global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor_Lcom_amazon_ags_client_metrics_EventCollector_Lcom_amazon_ags_html5_util_GlobalState_Lcom_amazon_ags_auth_AuthManager_Lcom_amazon_ags_html5_content_ContentVersion_Lcom_amazon_ags_html5_util_DeviceInfo_, new JValue (p0), new JValue (p1), new JValue (p2), new JValue (p3), new JValue (p4)),
+					JniHandleOwnership.TransferLocalRef);
+			JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Lcom_amazon_ags_client_metrics_EventCollector_Lcom_amazon_ags_html5_util_GlobalState_Lcom_amazon_ags_auth_AuthManager_Lcom_amazon_ags_html5_content_ContentVersion_Lcom_amazon_ags_html5_util_DeviceInfo_, new JValue (p0), new JValue (p1), new JValue (p2), new JValue (p3), new JValue (p4));
+		}
+
 		static IntPtr id_getInstance;
 		public static global::Com.Amazon.Ags.Client.Metrics.EventCollectorClient Instance {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.client.metrics']/class[@name='EventCollectorClient']/method[@name='getInstance' and count(parameter)=0]"
@@ -266,6 +290,37 @@ namespace Com.Amazon.Ags.Client.Metrics {
 				JNIEnv.CallVoidMethod  (Handle, id_resumeInsightsSession);
 			else
 				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, id_resumeInsightsSession);
+		}
+
+		static Delegate cb_setAuthManager_Lcom_amazon_ags_auth_AuthManager_;
+#pragma warning disable 0169
+		static Delegate GetSetAuthManager_Lcom_amazon_ags_auth_AuthManager_Handler ()
+		{
+			if (cb_setAuthManager_Lcom_amazon_ags_auth_AuthManager_ == null)
+				cb_setAuthManager_Lcom_amazon_ags_auth_AuthManager_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_SetAuthManager_Lcom_amazon_ags_auth_AuthManager_);
+			return cb_setAuthManager_Lcom_amazon_ags_auth_AuthManager_;
+		}
+
+		static void n_SetAuthManager_Lcom_amazon_ags_auth_AuthManager_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+		{
+			global::Com.Amazon.Ags.Client.Metrics.EventCollectorClient __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Client.Metrics.EventCollectorClient> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::Com.Amazon.Ags.Auth.AuthManager p0 = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Auth.AuthManager> (native_p0, JniHandleOwnership.DoNotTransfer);
+			__this.SetAuthManager (p0);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_setAuthManager_Lcom_amazon_ags_auth_AuthManager_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.client.metrics']/class[@name='EventCollectorClient']/method[@name='setAuthManager' and count(parameter)=1 and parameter[1][@type='com.amazon.ags.auth.AuthManager']]"
+		[Register ("setAuthManager", "(Lcom/amazon/ags/auth/AuthManager;)V", "GetSetAuthManager_Lcom_amazon_ags_auth_AuthManager_Handler")]
+		public virtual void SetAuthManager (global::Com.Amazon.Ags.Auth.AuthManager p0)
+		{
+			if (id_setAuthManager_Lcom_amazon_ags_auth_AuthManager_ == IntPtr.Zero)
+				id_setAuthManager_Lcom_amazon_ags_auth_AuthManager_ = JNIEnv.GetMethodID (class_ref, "setAuthManager", "(Lcom/amazon/ags/auth/AuthManager;)V");
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_setAuthManager_Lcom_amazon_ags_auth_AuthManager_, new JValue (p0));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, id_setAuthManager_Lcom_amazon_ags_auth_AuthManager_, new JValue (p0));
 		}
 
 		static Delegate cb_setContentVersion_Lcom_amazon_ags_html5_content_ContentVersion_;

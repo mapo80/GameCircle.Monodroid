@@ -53,6 +53,16 @@ namespace Com.Amazon.Ags.Jni {
 			JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor);
 		}
 
+		static IntPtr id_initializeJni_Lcom_amazon_ags_api_AmazonGamesClient_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.jni']/class[@name='AGSJniHandler']/method[@name='initializeJni' and count(parameter)=1 and parameter[1][@type='com.amazon.ags.api.AmazonGamesClient']]"
+		[Register ("initializeJni", "(Lcom/amazon/ags/api/AmazonGamesClient;)V", "")]
+		public static void InitializeJni (global::Com.Amazon.Ags.Api.AmazonGamesClient p0)
+		{
+			if (id_initializeJni_Lcom_amazon_ags_api_AmazonGamesClient_ == IntPtr.Zero)
+				id_initializeJni_Lcom_amazon_ags_api_AmazonGamesClient_ = JNIEnv.GetStaticMethodID (class_ref, "initializeJni", "(Lcom/amazon/ags/api/AmazonGamesClient;)V");
+			JNIEnv.CallStaticVoidMethod  (class_ref, id_initializeJni_Lcom_amazon_ags_api_AmazonGamesClient_, new JValue (p0));
+		}
+
 		static IntPtr id_isLoaded;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.jni']/class[@name='AGSJniHandler']/method[@name='isLoaded' and count(parameter)=0]"
 		[Register ("isLoaded", "()V", "")]

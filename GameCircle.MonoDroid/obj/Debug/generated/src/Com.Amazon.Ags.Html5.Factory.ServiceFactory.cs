@@ -200,6 +200,19 @@ namespace Com.Amazon.Ags.Html5.Factory {
 			return __ret;
 		}
 
+		static IntPtr id_initialize_Landroid_content_Context_Ljava_lang_String_Lcom_amazon_ags_html5_content_ContentManager_Lcom_amazon_ags_client_metrics_EventCollectorClient_Lcom_amazon_ags_storage_StringObfuscator_Lcom_amazon_ags_html5_content_GCVariationManager_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.html5.factory']/class[@name='ServiceFactory']/method[@name='initialize' and count(parameter)=6 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='com.amazon.ags.html5.content.ContentManager'] and parameter[4][@type='com.amazon.ags.client.metrics.EventCollectorClient'] and parameter[5][@type='com.amazon.ags.storage.StringObfuscator'] and parameter[6][@type='com.amazon.ags.html5.content.GCVariationManager']]"
+		[Register ("initialize", "(Landroid/content/Context;Ljava/lang/String;Lcom/amazon/ags/html5/content/ContentManager;Lcom/amazon/ags/client/metrics/EventCollectorClient;Lcom/amazon/ags/storage/StringObfuscator;Lcom/amazon/ags/html5/content/GCVariationManager;)Lcom/amazon/ags/html5/factory/ServiceFactory;", "")]
+		public static global::Com.Amazon.Ags.Html5.Factory.ServiceFactory Initialize (global::Android.Content.Context p0, string p1, global::Com.Amazon.Ags.Html5.Content.ContentManager p2, global::Com.Amazon.Ags.Client.Metrics.EventCollectorClient p3, global::Com.Amazon.Ags.Storage.IStringObfuscator p4, global::Com.Amazon.Ags.Html5.Content.GCVariationManager p5)
+		{
+			if (id_initialize_Landroid_content_Context_Ljava_lang_String_Lcom_amazon_ags_html5_content_ContentManager_Lcom_amazon_ags_client_metrics_EventCollectorClient_Lcom_amazon_ags_storage_StringObfuscator_Lcom_amazon_ags_html5_content_GCVariationManager_ == IntPtr.Zero)
+				id_initialize_Landroid_content_Context_Ljava_lang_String_Lcom_amazon_ags_html5_content_ContentManager_Lcom_amazon_ags_client_metrics_EventCollectorClient_Lcom_amazon_ags_storage_StringObfuscator_Lcom_amazon_ags_html5_content_GCVariationManager_ = JNIEnv.GetStaticMethodID (class_ref, "initialize", "(Landroid/content/Context;Ljava/lang/String;Lcom/amazon/ags/html5/content/ContentManager;Lcom/amazon/ags/client/metrics/EventCollectorClient;Lcom/amazon/ags/storage/StringObfuscator;Lcom/amazon/ags/html5/content/GCVariationManager;)Lcom/amazon/ags/html5/factory/ServiceFactory;");
+			IntPtr native_p1 = JNIEnv.NewString (p1);
+			global::Com.Amazon.Ags.Html5.Factory.ServiceFactory __ret = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Html5.Factory.ServiceFactory> (JNIEnv.CallStaticObjectMethod  (class_ref, id_initialize_Landroid_content_Context_Ljava_lang_String_Lcom_amazon_ags_html5_content_ContentManager_Lcom_amazon_ags_client_metrics_EventCollectorClient_Lcom_amazon_ags_storage_StringObfuscator_Lcom_amazon_ags_html5_content_GCVariationManager_, new JValue (p0), new JValue (native_p1), new JValue (p2), new JValue (p3), new JValue (p4), new JValue (p5)), JniHandleOwnership.TransferLocalRef);
+			JNIEnv.DeleteLocalRef (native_p1);
+			return __ret;
+		}
+
 		static IntPtr id_onPause;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.html5.factory']/class[@name='ServiceFactory']/method[@name='onPause' and count(parameter)=0]"
 		[Register ("onPause", "()V", "")]

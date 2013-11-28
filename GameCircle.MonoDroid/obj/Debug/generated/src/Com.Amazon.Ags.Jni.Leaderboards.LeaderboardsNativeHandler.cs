@@ -74,6 +74,16 @@ namespace Com.Amazon.Ags.Jni.Leaderboards {
 			return __ret;
 		}
 
+		static IntPtr id_initializeNativeHandler_Lcom_amazon_ags_api_AmazonGamesClient_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.jni.leaderboards']/class[@name='LeaderboardsNativeHandler']/method[@name='initializeNativeHandler' and count(parameter)=1 and parameter[1][@type='com.amazon.ags.api.AmazonGamesClient']]"
+		[Register ("initializeNativeHandler", "(Lcom/amazon/ags/api/AmazonGamesClient;)V", "")]
+		public static void InitializeNativeHandler (global::Com.Amazon.Ags.Api.AmazonGamesClient p0)
+		{
+			if (id_initializeNativeHandler_Lcom_amazon_ags_api_AmazonGamesClient_ == IntPtr.Zero)
+				id_initializeNativeHandler_Lcom_amazon_ags_api_AmazonGamesClient_ = JNIEnv.GetStaticMethodID (class_ref, "initializeNativeHandler", "(Lcom/amazon/ags/api/AmazonGamesClient;)V");
+			JNIEnv.CallStaticVoidMethod  (class_ref, id_initializeNativeHandler_Lcom_amazon_ags_api_AmazonGamesClient_, new JValue (p0));
+		}
+
 		static IntPtr id_requestLeaderboards_IJ;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.jni.leaderboards']/class[@name='LeaderboardsNativeHandler']/method[@name='requestLeaderboards' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='long']]"
 		[Register ("requestLeaderboards", "(IJ)V", "")]

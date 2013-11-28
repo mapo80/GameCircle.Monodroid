@@ -249,6 +249,39 @@ namespace Com.Amazon.Ags.Html5.Content {
 			}
 		}
 
+		static Delegate cb_initializeContent_Ljava_util_concurrent_ExecutorService_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_content_ContentManager_ContentInitializationCallback_;
+#pragma warning disable 0169
+		static Delegate GetInitializeContent_Ljava_util_concurrent_ExecutorService_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_content_ContentManager_ContentInitializationCallback_Handler ()
+		{
+			if (cb_initializeContent_Ljava_util_concurrent_ExecutorService_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_content_ContentManager_ContentInitializationCallback_ == null)
+				cb_initializeContent_Ljava_util_concurrent_ExecutorService_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_content_ContentManager_ContentInitializationCallback_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, IntPtr, IntPtr>) n_InitializeContent_Ljava_util_concurrent_ExecutorService_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_content_ContentManager_ContentInitializationCallback_);
+			return cb_initializeContent_Ljava_util_concurrent_ExecutorService_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_content_ContentManager_ContentInitializationCallback_;
+		}
+
+		static void n_InitializeContent_Ljava_util_concurrent_ExecutorService_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_content_ContentManager_ContentInitializationCallback_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1, IntPtr native_p2)
+		{
+			global::Com.Amazon.Ags.Html5.Content.ContentManager __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Html5.Content.ContentManager> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::Java.Util.Concurrent.IExecutorService p0 = (global::Java.Util.Concurrent.IExecutorService)global::Java.Lang.Object.GetObject<global::Java.Util.Concurrent.IExecutorService> (native_p0, JniHandleOwnership.DoNotTransfer);
+			global::Com.Amazon.Ags.Html5.Content.GCVariationManager p1 = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Html5.Content.GCVariationManager> (native_p1, JniHandleOwnership.DoNotTransfer);
+			global::Com.Amazon.Ags.Html5.Content.ContentManager.IContentInitializationCallback p2 = (global::Com.Amazon.Ags.Html5.Content.ContentManager.IContentInitializationCallback)global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Html5.Content.ContentManager.IContentInitializationCallback> (native_p2, JniHandleOwnership.DoNotTransfer);
+			__this.InitializeContent (p0, p1, p2);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_initializeContent_Ljava_util_concurrent_ExecutorService_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_content_ContentManager_ContentInitializationCallback_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.html5.content']/class[@name='ContentManager']/method[@name='initializeContent' and count(parameter)=3 and parameter[1][@type='java.util.concurrent.ExecutorService'] and parameter[2][@type='com.amazon.ags.html5.content.GCVariationManager'] and parameter[3][@type='com.amazon.ags.html5.content.ContentManager.ContentInitializationCallback']]"
+		[Register ("initializeContent", "(Ljava/util/concurrent/ExecutorService;Lcom/amazon/ags/html5/content/GCVariationManager;Lcom/amazon/ags/html5/content/ContentManager$ContentInitializationCallback;)V", "GetInitializeContent_Ljava_util_concurrent_ExecutorService_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_content_ContentManager_ContentInitializationCallback_Handler")]
+		public virtual void InitializeContent (global::Java.Util.Concurrent.IExecutorService p0, global::Com.Amazon.Ags.Html5.Content.GCVariationManager p1, global::Com.Amazon.Ags.Html5.Content.ContentManager.IContentInitializationCallback p2)
+		{
+			if (id_initializeContent_Ljava_util_concurrent_ExecutorService_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_content_ContentManager_ContentInitializationCallback_ == IntPtr.Zero)
+				id_initializeContent_Ljava_util_concurrent_ExecutorService_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_content_ContentManager_ContentInitializationCallback_ = JNIEnv.GetMethodID (class_ref, "initializeContent", "(Ljava/util/concurrent/ExecutorService;Lcom/amazon/ags/html5/content/GCVariationManager;Lcom/amazon/ags/html5/content/ContentManager$ContentInitializationCallback;)V");
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_initializeContent_Ljava_util_concurrent_ExecutorService_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_content_ContentManager_ContentInitializationCallback_, new JValue (p0), new JValue (p1), new JValue (p2));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, id_initializeContent_Ljava_util_concurrent_ExecutorService_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_content_ContentManager_ContentInitializationCallback_, new JValue (p0), new JValue (p1), new JValue (p2));
+		}
+
 		static Delegate cb_loadBackgroundJavascript_Landroid_webkit_WebView_;
 #pragma warning disable 0169
 		static Delegate GetLoadBackgroundJavascript_Landroid_webkit_WebView_Handler ()

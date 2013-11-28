@@ -178,6 +178,30 @@ namespace Com.Amazon.Ags.Html5.Overlay {
 
 		protected OverlayManager (IntPtr javaReference, JniHandleOwnership transfer) : base (javaReference, transfer) {}
 
+		static IntPtr id_ctor_Landroid_content_Context_Landroid_os_Handler_Lcom_amazon_ags_html5_overlay_toasts_ClickableToastFactory_Lcom_amazon_ags_client_KindleFireProxy_Lcom_amazon_ags_html5_overlay_OverlaySessionInformation_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_util_ImageManager_;
+		// Metadata.xml XPath constructor reference: path="/api/package[@name='com.amazon.ags.html5.overlay']/class[@name='OverlayManager']/constructor[@name='OverlayManager' and count(parameter)=7 and parameter[1][@type='android.content.Context'] and parameter[2][@type='android.os.Handler'] and parameter[3][@type='com.amazon.ags.html5.overlay.toasts.ClickableToastFactory'] and parameter[4][@type='com.amazon.ags.client.KindleFireProxy'] and parameter[5][@type='com.amazon.ags.html5.overlay.OverlaySessionInformation'] and parameter[6][@type='com.amazon.ags.html5.content.GCVariationManager'] and parameter[7][@type='com.amazon.ags.html5.util.ImageManager']]"
+		[Register (".ctor", "(Landroid/content/Context;Landroid/os/Handler;Lcom/amazon/ags/html5/overlay/toasts/ClickableToastFactory;Lcom/amazon/ags/client/KindleFireProxy;Lcom/amazon/ags/html5/overlay/OverlaySessionInformation;Lcom/amazon/ags/html5/content/GCVariationManager;Lcom/amazon/ags/html5/util/ImageManager;)V", "")]
+		public OverlayManager (global::Android.Content.Context p0, global::Android.OS.Handler p1, global::Com.Amazon.Ags.Html5.Overlay.Toasts.IClickableToastFactory p2, global::Com.Amazon.Ags.Client.IKindleFireProxy p3, global::Com.Amazon.Ags.Html5.Overlay.OverlaySessionInformation p4, global::Com.Amazon.Ags.Html5.Content.GCVariationManager p5, global::Com.Amazon.Ags.Html5.Util.ImageManager p6) : base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
+		{
+			if (Handle != IntPtr.Zero)
+				return;
+
+			if (GetType () != typeof (OverlayManager)) {
+				SetHandle (
+						global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "(Landroid/content/Context;Landroid/os/Handler;Lcom/amazon/ags/html5/overlay/toasts/ClickableToastFactory;Lcom/amazon/ags/client/KindleFireProxy;Lcom/amazon/ags/html5/overlay/OverlaySessionInformation;Lcom/amazon/ags/html5/content/GCVariationManager;Lcom/amazon/ags/html5/util/ImageManager;)V", new JValue (p0), new JValue (p1), new JValue (p2), new JValue (p3), new JValue (p4), new JValue (p5), new JValue (p6)),
+						JniHandleOwnership.TransferLocalRef);
+				global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "(Landroid/content/Context;Landroid/os/Handler;Lcom/amazon/ags/html5/overlay/toasts/ClickableToastFactory;Lcom/amazon/ags/client/KindleFireProxy;Lcom/amazon/ags/html5/overlay/OverlaySessionInformation;Lcom/amazon/ags/html5/content/GCVariationManager;Lcom/amazon/ags/html5/util/ImageManager;)V", new JValue (p0), new JValue (p1), new JValue (p2), new JValue (p3), new JValue (p4), new JValue (p5), new JValue (p6));
+				return;
+			}
+
+			if (id_ctor_Landroid_content_Context_Landroid_os_Handler_Lcom_amazon_ags_html5_overlay_toasts_ClickableToastFactory_Lcom_amazon_ags_client_KindleFireProxy_Lcom_amazon_ags_html5_overlay_OverlaySessionInformation_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_util_ImageManager_ == IntPtr.Zero)
+				id_ctor_Landroid_content_Context_Landroid_os_Handler_Lcom_amazon_ags_html5_overlay_toasts_ClickableToastFactory_Lcom_amazon_ags_client_KindleFireProxy_Lcom_amazon_ags_html5_overlay_OverlaySessionInformation_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_util_ImageManager_ = JNIEnv.GetMethodID (class_ref, "<init>", "(Landroid/content/Context;Landroid/os/Handler;Lcom/amazon/ags/html5/overlay/toasts/ClickableToastFactory;Lcom/amazon/ags/client/KindleFireProxy;Lcom/amazon/ags/html5/overlay/OverlaySessionInformation;Lcom/amazon/ags/html5/content/GCVariationManager;Lcom/amazon/ags/html5/util/ImageManager;)V");
+			SetHandle (
+					global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor_Landroid_content_Context_Landroid_os_Handler_Lcom_amazon_ags_html5_overlay_toasts_ClickableToastFactory_Lcom_amazon_ags_client_KindleFireProxy_Lcom_amazon_ags_html5_overlay_OverlaySessionInformation_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_util_ImageManager_, new JValue (p0), new JValue (p1), new JValue (p2), new JValue (p3), new JValue (p4), new JValue (p5), new JValue (p6)),
+					JniHandleOwnership.TransferLocalRef);
+			JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Landroid_content_Context_Landroid_os_Handler_Lcom_amazon_ags_html5_overlay_toasts_ClickableToastFactory_Lcom_amazon_ags_client_KindleFireProxy_Lcom_amazon_ags_html5_overlay_OverlaySessionInformation_Lcom_amazon_ags_html5_content_GCVariationManager_Lcom_amazon_ags_html5_util_ImageManager_, new JValue (p0), new JValue (p1), new JValue (p2), new JValue (p3), new JValue (p4), new JValue (p5), new JValue (p6));
+		}
+
 		static Delegate cb_notifyCurrentActivityChanged_Landroid_app_Activity_;
 #pragma warning disable 0169
 		static Delegate GetNotifyCurrentActivityChanged_Landroid_app_Activity_Handler ()

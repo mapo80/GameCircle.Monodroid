@@ -58,6 +58,17 @@ namespace Com.Amazon.Ags.Html5.Factory {
 			}
 		}
 
+		static IntPtr id_getLatestCallback;
+		public global::Com.Amazon.Ags.Api.IAmazonGamesCallback LatestCallback {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.html5.factory']/class[@name='AGSClientInstanceCoordinator']/method[@name='getLatestCallback' and count(parameter)=0]"
+			[Register ("getLatestCallback", "()Lcom/amazon/ags/api/AmazonGamesCallback;", "GetGetLatestCallbackHandler")]
+			get {
+				if (id_getLatestCallback == IntPtr.Zero)
+					id_getLatestCallback = JNIEnv.GetMethodID (class_ref, "getLatestCallback", "()Lcom/amazon/ags/api/AmazonGamesCallback;");
+				return global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Api.IAmazonGamesCallback> (JNIEnv.CallObjectMethod  (Handle, id_getLatestCallback), JniHandleOwnership.TransferLocalRef);
+			}
+		}
+
 		static IntPtr id_addAGSClientInstanceCoordinatorListener_Lcom_amazon_ags_html5_factory_AGSClientInstanceCoordinatorListener_;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.html5.factory']/class[@name='AGSClientInstanceCoordinator']/method[@name='addAGSClientInstanceCoordinatorListener' and count(parameter)=1 and parameter[1][@type='com.amazon.ags.html5.factory.AGSClientInstanceCoordinatorListener']]"
 		[Register ("addAGSClientInstanceCoordinatorListener", "(Lcom/amazon/ags/html5/factory/AGSClientInstanceCoordinatorListener;)V", "")]
@@ -68,6 +79,17 @@ namespace Com.Amazon.Ags.Html5.Factory {
 			JNIEnv.CallVoidMethod  (Handle, id_addAGSClientInstanceCoordinatorListener_Lcom_amazon_ags_html5_factory_AGSClientInstanceCoordinatorListener_, new JValue (p0));
 		}
 
+		static IntPtr id_initialize_Landroid_app_Activity_Lcom_amazon_ags_api_AmazonGamesCallback_Ljava_util_EnumSet_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.html5.factory']/class[@name='AGSClientInstanceCoordinator']/method[@name='initialize' and count(parameter)=3 and parameter[1][@type='android.app.Activity'] and parameter[2][@type='com.amazon.ags.api.AmazonGamesCallback'] and parameter[3][@type='java.util.EnumSet']]"
+		[Register ("initialize", "(Landroid/app/Activity;Lcom/amazon/ags/api/AmazonGamesCallback;Ljava/util/EnumSet;)Lcom/amazon/ags/html5/factory/AGSClientInstanceCoordinator;", "")]
+		public static global::Com.Amazon.Ags.Html5.Factory.AGSClientInstanceCoordinatorWrapper Initialize (global::Android.App.Activity p0, global::Com.Amazon.Ags.Api.IAmazonGamesCallback p1, global::Java.Util.EnumSet p2)
+		{
+			if (id_initialize_Landroid_app_Activity_Lcom_amazon_ags_api_AmazonGamesCallback_Ljava_util_EnumSet_ == IntPtr.Zero)
+				id_initialize_Landroid_app_Activity_Lcom_amazon_ags_api_AmazonGamesCallback_Ljava_util_EnumSet_ = JNIEnv.GetStaticMethodID (class_ref, "initialize", "(Landroid/app/Activity;Lcom/amazon/ags/api/AmazonGamesCallback;Ljava/util/EnumSet;)Lcom/amazon/ags/html5/factory/AGSClientInstanceCoordinator;");
+			global::Com.Amazon.Ags.Html5.Factory.AGSClientInstanceCoordinatorWrapper __ret = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Html5.Factory.AGSClientInstanceCoordinatorWrapper> (JNIEnv.CallStaticObjectMethod  (class_ref, id_initialize_Landroid_app_Activity_Lcom_amazon_ags_api_AmazonGamesCallback_Ljava_util_EnumSet_, new JValue (p0), new JValue (p1), new JValue (p2)), JniHandleOwnership.TransferLocalRef);
+			return __ret;
+		}
+
 		static IntPtr id_updateActivity_Landroid_app_Activity_;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.html5.factory']/class[@name='AGSClientInstanceCoordinator']/method[@name='updateActivity' and count(parameter)=1 and parameter[1][@type='android.app.Activity']]"
 		[Register ("updateActivity", "(Landroid/app/Activity;)V", "")]
@@ -76,6 +98,16 @@ namespace Com.Amazon.Ags.Html5.Factory {
 			if (id_updateActivity_Landroid_app_Activity_ == IntPtr.Zero)
 				id_updateActivity_Landroid_app_Activity_ = JNIEnv.GetMethodID (class_ref, "updateActivity", "(Landroid/app/Activity;)V");
 			JNIEnv.CallVoidMethod  (Handle, id_updateActivity_Landroid_app_Activity_, new JValue (p0));
+		}
+
+		static IntPtr id_updateCallback_Lcom_amazon_ags_api_AmazonGamesCallback_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.html5.factory']/class[@name='AGSClientInstanceCoordinator']/method[@name='updateCallback' and count(parameter)=1 and parameter[1][@type='com.amazon.ags.api.AmazonGamesCallback']]"
+		[Register ("updateCallback", "(Lcom/amazon/ags/api/AmazonGamesCallback;)V", "")]
+		public void UpdateCallback (global::Com.Amazon.Ags.Api.IAmazonGamesCallback p0)
+		{
+			if (id_updateCallback_Lcom_amazon_ags_api_AmazonGamesCallback_ == IntPtr.Zero)
+				id_updateCallback_Lcom_amazon_ags_api_AmazonGamesCallback_ = JNIEnv.GetMethodID (class_ref, "updateCallback", "(Lcom/amazon/ags/api/AmazonGamesCallback;)V");
+			JNIEnv.CallVoidMethod  (Handle, id_updateCallback_Lcom_amazon_ags_api_AmazonGamesCallback_, new JValue (p0));
 		}
 
 		static IntPtr id_updateFeatures_Ljava_util_EnumSet_;

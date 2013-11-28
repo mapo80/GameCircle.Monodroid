@@ -125,6 +125,44 @@
 </parameter>
 </method>
 </interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="AmazonGamesClient" static="false" visibility="public">
+<implements name="com.amazon.ags.api.AmazonGames" name-generic-aware="com.amazon.ags.api.AmazonGames">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAchievementsClient" native="false" return="com.amazon.ags.api.achievements.AchievementsClient" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="com.amazon.ags.api.AmazonGames" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLeaderboardsClient" native="false" return="com.amazon.ags.api.leaderboards.LeaderboardsClient" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProfilesClient" native="false" return="com.amazon.ags.api.profiles.ProfilesClient" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWhispersyncClient" native="false" return="com.amazon.ags.api.whispersync.WhispersyncClient" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initialize" native="false" return="void" static="true" synchronized="true" visibility="public">
+<parameter name="p0" type="android.app.Activity">
+</parameter>
+<parameter name="p1" type="com.amazon.ags.api.AmazonGamesCallback">
+</parameter>
+<parameter name="p2" type="java.util.EnumSet&lt;com.amazon.ags.api.AmazonGamesFeature&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initializeJni" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isInitialized" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="true" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPopUpLocation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.amazon.ags.api.overlay.PopUpLocation">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showGameCircle" native="false" return="com.amazon.ags.api.AGResponseHandle&lt;com.amazon.ags.api.RequestResponse&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shutdown" native="false" return="void" static="true" synchronized="true" visibility="public">
+</method>
+</class>
 <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AmazonGamesClient.1" static="false" visibility="">
 <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
 </implements>
@@ -1101,7 +1139,34 @@
 </method>
 </interface>
 </package>
-<package name="com.amazon.ags.auth"/>
+<package name="com.amazon.ags.auth">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AuthManager" static="false" visibility="public">
+<implements name="com.amazon.ags.html5.factory.AGSClientInstanceCoordinatorListener" name-generic-aware="com.amazon.ags.html5.factory.AGSClientInstanceCoordinatorListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AuthManager" static="false" type="com.amazon.ags.auth.AuthManager" visibility="public">
+<parameter name="p0" type="com.amazon.ags.html5.util.ClientConfig">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGameId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isLoggedIn" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="logout" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="AuthError" type="com.amazon.identity.auth.device.AuthError">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="notifyCurrentActivityChanged" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="p0" type="android.app.Activity">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tryGetToken" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tryLogin" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.amazon.identity.auth.device.authorization.api.AuthorizationListener">
+</parameter>
+</method>
+</class>
+</package>
 <package name="com.amazon.ags.client">
 <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AGResponseHandleImpl" static="false" visibility="public">
 <typeParameters>
@@ -2084,6 +2149,58 @@
 </class>
 </package>
 <package name="com.amazon.ags.client.metrics">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AmazonInsightsEventCollector" static="false" visibility="public">
+<implements name="com.amazon.ags.client.metrics.EventCollector" name-generic-aware="com.amazon.ags.client.metrics.EventCollector">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AmazonInsightsEventCollector" static="false" type="com.amazon.ags.client.metrics.AmazonInsightsEventCollector" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="convertToInsightsEvent" native="false" return="com.amazon.insights.Event" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="com.amazon.ags.client.metrics.events.GameCircleGenericEvent">
+</parameter>
+<exception name="EventReportException" type="com.amazon.ags.client.metrics.EventReportException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initialize" native="false" return="com.amazon.insights.EventClient" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<exception name="IllegalConstructionException" type="com.amazon.ags.client.metrics.IllegalConstructionException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pauseInsightsSession" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reportGenericEvent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.amazon.ags.client.metrics.events.GameCircleGenericEvent">
+</parameter>
+<exception name="EventReportException" type="com.amazon.ags.client.metrics.EventReportException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resumeInsightsSession" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setIsGuest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPlayerId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="submitEvents" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="EventReportException" type="com.amazon.ags.client.metrics.EventReportException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.amazon.insights.InsightsCallback" extends-generic-aware="com.amazon.insights.InsightsCallback&lt;com.amazon.insights.AmazonInsights&gt;" final="false" name="AmazonInsightsEventCollector.1" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="onComplete" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.amazon.insights.AmazonInsights">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onComplete" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+</method>
+</class>
 <interface abstract="true" deprecated="not deprecated" final="false" name="EventCollector" static="false" visibility="public">
 <method abstract="true" deprecated="not deprecated" final="false" name="pauseInsightsSession" native="false" return="void" static="false" synchronized="false" visibility="public">
 </method>
@@ -5643,6 +5760,52 @@
 </parameter>
 </method>
 </class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="GCVariationManager" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GCVariationManager" static="false" type="com.amazon.ags.html5.content.GCVariationManager" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="GCVariationManager" static="false" type="com.amazon.ags.html5.content.GCVariationManager" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCachedVariations" native="false" return="java.util.Map&lt;java.lang.String, java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadVariationsFromSQLite" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.amazon.ags.storage.OfflineDataCache">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="refreshVariations" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="com.amazon.ags.html5.content.GCVariationManager.GCVariationManagerRefreshCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="saveVariationsToSQLite" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.amazon.ags.storage.OfflineDataCache">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.amazon.insights.InsightsCallback" extends-generic-aware="com.amazon.insights.InsightsCallback&lt;com.amazon.insights.VariationSet&gt;" final="false" name="GCVariationManager.1" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="onComplete" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.amazon.insights.VariationSet">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onComplete" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.amazon.insights.InsightsCallback" extends-generic-aware="com.amazon.insights.InsightsCallback&lt;com.amazon.insights.VariationSet&gt;" final="false" name="GCVariationManager.1.1" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="onComplete" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.amazon.insights.VariationSet">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onComplete" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+</method>
+</class>
 <interface abstract="true" deprecated="not deprecated" final="false" name="GCVariationManager.GCVariationManagerRefreshCallback" static="true" visibility="public">
 <method abstract="true" deprecated="not deprecated" final="false" name="onRefreshCompleted" native="false" return="void" static="false" synchronized="false" visibility="public">
 </method>
@@ -5831,6 +5994,38 @@
 </parameter>
 </method>
 </interface>
+<class abstract="false" deprecated="not deprecated" extends="com.amazon.ags.html5.javascript.CallHandlerBase" extends-generic-aware="com.amazon.ags.html5.javascript.CallHandlerBase" final="false" name="NativeAuthCallHandler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NativeAuthCallHandler" static="false" type="com.amazon.ags.html5.javascript.NativeAuthCallHandler" visibility="public">
+<parameter name="p0" type="android.os.Handler">
+</parameter>
+<parameter name="p1" type="com.amazon.ags.auth.AuthManager">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleMessage" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="org.json.JSONObject">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="NativeAuthCallHandler.1" static="false" visibility="">
+<implements name="com.amazon.identity.auth.device.authorization.api.AuthorizationListener" name-generic-aware="com.amazon.identity.auth.device.authorization.api.AuthorizationListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCancel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onError" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.amazon.identity.auth.device.AuthError">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSuccess" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Bundle">
+</parameter>
+</method>
+</class>
 <class abstract="false" deprecated="not deprecated" extends="com.amazon.ags.html5.javascript.CallHandlerBase" extends-generic-aware="com.amazon.ags.html5.javascript.CallHandlerBase" final="false" name="NativeCacheCallHandler" static="false" visibility="public">
 <constructor deprecated="not deprecated" final="false" name="NativeCacheCallHandler" static="false" type="com.amazon.ags.html5.javascript.NativeCacheCallHandler" visibility="public">
 <parameter name="p0" type="android.os.Handler">
