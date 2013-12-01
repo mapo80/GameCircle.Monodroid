@@ -268,7 +268,7 @@ namespace Com.Amazon.Identity.Auth.Device.Endpoint {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.identity.auth.device.endpoint']/class[@name='AbstractJSONTokenResponse']/method[@name='createPrimaryToken' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='long']]"
 		[Register ("createPrimaryToken", "(Ljava/lang/String;J)Lcom/amazon/identity/auth/device/token/Token;", "GetCreatePrimaryToken_Ljava_lang_String_JHandler")]
-		public abstract global::Com.Amazon.Identity.Auth.Device.Token.IToken CreatePrimaryToken (string p0, long p1);
+		public abstract global::tokenImpl.IToken CreatePrimaryToken (string p0, long p1);
 
 		static Delegate cb_doParse_Lorg_json_JSONObject_;
 #pragma warning disable 0169
@@ -312,16 +312,16 @@ namespace Com.Amazon.Identity.Auth.Device.Endpoint {
 		static IntPtr id_extractPrimaryToken_Lorg_json_JSONObject_;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.identity.auth.device.endpoint']/class[@name='AbstractJSONTokenResponse']/method[@name='extractPrimaryToken' and count(parameter)=1 and parameter[1][@type='org.json.JSONObject']]"
 		[Register ("extractPrimaryToken", "(Lorg/json/JSONObject;)Lcom/amazon/identity/auth/device/token/Token;", "GetExtractPrimaryToken_Lorg_json_JSONObject_Handler")]
-		protected virtual global::Com.Amazon.Identity.Auth.Device.Token.IToken ExtractPrimaryToken (global::Org.Json.JSONObject p0)
+		protected virtual global::tokenImpl.IToken ExtractPrimaryToken (global::Org.Json.JSONObject p0)
 		{
 			if (id_extractPrimaryToken_Lorg_json_JSONObject_ == IntPtr.Zero)
 				id_extractPrimaryToken_Lorg_json_JSONObject_ = JNIEnv.GetMethodID (class_ref, "extractPrimaryToken", "(Lorg/json/JSONObject;)Lcom/amazon/identity/auth/device/token/Token;");
 
-			global::Com.Amazon.Identity.Auth.Device.Token.IToken __ret;
+			global::tokenImpl.IToken __ret;
 			if (GetType () == ThresholdType)
-				__ret = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.IToken> (JNIEnv.CallObjectMethod  (Handle, id_extractPrimaryToken_Lorg_json_JSONObject_, new JValue (p0)), JniHandleOwnership.TransferLocalRef);
+				__ret = global::Java.Lang.Object.GetObject<global::tokenImpl.IToken> (JNIEnv.CallObjectMethod  (Handle, id_extractPrimaryToken_Lorg_json_JSONObject_, new JValue (p0)), JniHandleOwnership.TransferLocalRef);
 			else
-				__ret = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.IToken> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, id_extractPrimaryToken_Lorg_json_JSONObject_, new JValue (p0)), JniHandleOwnership.TransferLocalRef);
+				__ret = global::Java.Lang.Object.GetObject<global::tokenImpl.IToken> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, id_extractPrimaryToken_Lorg_json_JSONObject_, new JValue (p0)), JniHandleOwnership.TransferLocalRef);
 			return __ret;
 		}
 
@@ -574,12 +574,12 @@ namespace Com.Amazon.Identity.Auth.Device.Endpoint {
 		static IntPtr id_createPrimaryToken_Ljava_lang_String_J;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.identity.auth.device.endpoint']/class[@name='AbstractJSONTokenResponse']/method[@name='createPrimaryToken' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='long']]"
 		[Register ("createPrimaryToken", "(Ljava/lang/String;J)Lcom/amazon/identity/auth/device/token/Token;", "GetCreatePrimaryToken_Ljava_lang_String_JHandler")]
-		public override global::Com.Amazon.Identity.Auth.Device.Token.IToken CreatePrimaryToken (string p0, long p1)
+		public override global::tokenImpl.IToken CreatePrimaryToken (string p0, long p1)
 		{
 			if (id_createPrimaryToken_Ljava_lang_String_J == IntPtr.Zero)
 				id_createPrimaryToken_Ljava_lang_String_J = JNIEnv.GetMethodID (class_ref, "createPrimaryToken", "(Ljava/lang/String;J)Lcom/amazon/identity/auth/device/token/Token;");
 			IntPtr native_p0 = JNIEnv.NewString (p0);
-			global::Com.Amazon.Identity.Auth.Device.Token.IToken __ret = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.IToken> (JNIEnv.CallObjectMethod  (Handle, id_createPrimaryToken_Ljava_lang_String_J, new JValue (native_p0), new JValue (p1)), JniHandleOwnership.TransferLocalRef);
+			global::tokenImpl.IToken __ret = global::Java.Lang.Object.GetObject<global::tokenImpl.IToken> (JNIEnv.CallObjectMethod  (Handle, id_createPrimaryToken_Ljava_lang_String_J, new JValue (native_p0), new JValue (p1)), JniHandleOwnership.TransferLocalRef);
 			JNIEnv.DeleteLocalRef (native_p0);
 			return __ret;
 		}

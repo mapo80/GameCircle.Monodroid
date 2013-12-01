@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 
-namespace Com.Amazon.Ags.Client.Whispersync.Clock {
+namespace clockInterface {
 
 	// Metadata.xml XPath class reference: path="/api/package[@name='com.amazon.ags.client.whispersync.clock']/class[@name='ClockSkewSharedPrefs']"
 	[global::Android.Runtime.Register ("com/amazon/ags/client/whispersync/clock/ClockSkewSharedPrefs", DoNotGenerateAcw=true)]
-	public partial class ClockSkewSharedPrefs : global::Java.Lang.Object, global::Com.Amazon.Ags.Client.Whispersync.Clock.IClockSkewStorage {
+	public partial class ClockSkewSharedPrefs : global::Java.Lang.Object, global::clockInterface.IClockSkewStorage {
 
 		internal static IntPtr java_class_handle;
 		internal static IntPtr class_ref {
@@ -60,7 +60,7 @@ namespace Com.Amazon.Ags.Client.Whispersync.Clock {
 
 		static long n_GetClockSkew (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Ags.Client.Whispersync.Clock.ClockSkewSharedPrefs __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Client.Whispersync.Clock.ClockSkewSharedPrefs> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::clockInterface.ClockSkewSharedPrefs __this = global::Java.Lang.Object.GetObject<global::clockInterface.ClockSkewSharedPrefs> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return __this.ClockSkew;
 		}
 #pragma warning restore 0169
@@ -76,7 +76,7 @@ namespace Com.Amazon.Ags.Client.Whispersync.Clock {
 
 		static void n_SetClockSkew_J (IntPtr jnienv, IntPtr native__this, long p0)
 		{
-			global::Com.Amazon.Ags.Client.Whispersync.Clock.ClockSkewSharedPrefs __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Client.Whispersync.Clock.ClockSkewSharedPrefs> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::clockInterface.ClockSkewSharedPrefs __this = global::Java.Lang.Object.GetObject<global::clockInterface.ClockSkewSharedPrefs> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			__this.ClockSkew = p0;
 		}
 #pragma warning restore 0169

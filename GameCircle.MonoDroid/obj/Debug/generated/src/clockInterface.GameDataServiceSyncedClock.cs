@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 
-namespace Com.Amazon.Ags.Client.Whispersync.Clock {
+namespace clockInterface {
 
 	// Metadata.xml XPath class reference: path="/api/package[@name='com.amazon.ags.client.whispersync.clock']/class[@name='GameDataServiceSyncedClock']"
 	[global::Android.Runtime.Register ("com/amazon/ags/client/whispersync/clock/GameDataServiceSyncedClock", DoNotGenerateAcw=true)]
-	public partial class GameDataServiceSyncedClock : global::Java.Lang.Object, global::Com.Amazon.Ags.Client.Whispersync.Clock.IClock {
+	public partial class GameDataServiceSyncedClock : global::Java.Lang.Object, global::clockInterface.IClock {
 
 		internal static IntPtr java_class_handle;
 		internal static IntPtr class_ref {
@@ -28,7 +28,7 @@ namespace Com.Amazon.Ags.Client.Whispersync.Clock {
 		static IntPtr id_ctor_Lcom_amazon_ags_client_whispersync_clock_Clock_Lcom_amazon_ags_client_whispersync_clock_ClockSkewStorage_;
 		// Metadata.xml XPath constructor reference: path="/api/package[@name='com.amazon.ags.client.whispersync.clock']/class[@name='GameDataServiceSyncedClock']/constructor[@name='GameDataServiceSyncedClock' and count(parameter)=2 and parameter[1][@type='com.amazon.ags.client.whispersync.clock.Clock'] and parameter[2][@type='com.amazon.ags.client.whispersync.clock.ClockSkewStorage']]"
 		[Register (".ctor", "(Lcom/amazon/ags/client/whispersync/clock/Clock;Lcom/amazon/ags/client/whispersync/clock/ClockSkewStorage;)V", "")]
-		public GameDataServiceSyncedClock (global::Com.Amazon.Ags.Client.Whispersync.Clock.IClock p0, global::Com.Amazon.Ags.Client.Whispersync.Clock.IClockSkewStorage p1) : base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
+		public GameDataServiceSyncedClock (global::clockInterface.IClock p0, global::clockInterface.IClockSkewStorage p1) : base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
 			if (Handle != IntPtr.Zero)
 				return;
@@ -60,7 +60,7 @@ namespace Com.Amazon.Ags.Client.Whispersync.Clock {
 
 		static long n_GetCurrentTimeSeconds (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Ags.Client.Whispersync.Clock.GameDataServiceSyncedClock __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Client.Whispersync.Clock.GameDataServiceSyncedClock> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::clockInterface.GameDataServiceSyncedClock __this = global::Java.Lang.Object.GetObject<global::clockInterface.GameDataServiceSyncedClock> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return __this.CurrentTimeSeconds;
 		}
 #pragma warning restore 0169
@@ -91,7 +91,7 @@ namespace Com.Amazon.Ags.Client.Whispersync.Clock {
 
 		static void n_SynchronizeClock_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
 		{
-			global::Com.Amazon.Ags.Client.Whispersync.Clock.GameDataServiceSyncedClock __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Client.Whispersync.Clock.GameDataServiceSyncedClock> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::clockInterface.GameDataServiceSyncedClock __this = global::Java.Lang.Object.GetObject<global::clockInterface.GameDataServiceSyncedClock> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			__this.SynchronizeClock (p0);
 		}

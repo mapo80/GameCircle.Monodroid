@@ -69,7 +69,7 @@ namespace Com.Amazon.Insights.Core {
 #pragma warning restore 0169
 
 		static IntPtr id_getConfiguration;
-		public virtual global::Com.Amazon.Insights.Core.Configuration.IConfiguration Configuration {
+		public virtual global::configurationImpl.IConfiguration Configuration {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.insights.core']/class[@name='DefaultInsightsContext']/method[@name='getConfiguration' and count(parameter)=0]"
 			[Register ("getConfiguration", "()Lcom/amazon/insights/core/configuration/Configuration;", "GetGetConfigurationHandler")]
 			get {
@@ -77,9 +77,9 @@ namespace Com.Amazon.Insights.Core {
 					id_getConfiguration = JNIEnv.GetMethodID (class_ref, "getConfiguration", "()Lcom/amazon/insights/core/configuration/Configuration;");
 
 				if (GetType () == ThresholdType)
-					return global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.IConfiguration> (JNIEnv.CallObjectMethod  (Handle, id_getConfiguration), JniHandleOwnership.TransferLocalRef);
+					return global::Java.Lang.Object.GetObject<global::configurationImpl.IConfiguration> (JNIEnv.CallObjectMethod  (Handle, id_getConfiguration), JniHandleOwnership.TransferLocalRef);
 				else
-					return global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.IConfiguration> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, id_getConfiguration), JniHandleOwnership.TransferLocalRef);
+					return global::Java.Lang.Object.GetObject<global::configurationImpl.IConfiguration> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, id_getConfiguration), JniHandleOwnership.TransferLocalRef);
 			}
 		}
 

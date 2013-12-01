@@ -6,7 +6,7 @@ namespace Com.Amazon.Insights.Session.Client {
 
 	// Metadata.xml XPath class reference: path="/api/package[@name='com.amazon.insights.session.client']/class[@name='DefaultSessionClient']"
 	[global::Android.Runtime.Register ("com/amazon/insights/session/client/DefaultSessionClient", DoNotGenerateAcw=true)]
-	public partial class DefaultSessionClient : global::Java.Lang.Object, global::Com.Amazon.Insights.Session.IInternalSessionClient {
+	public partial class DefaultSessionClient : global::Java.Lang.Object, global::sessionImpl.IInternalSessionClient {
 
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.amazon.insights.session.client']/class[@name='DefaultSessionClient']/field[@name='DEFAULT_RESTART_DELAY']"
@@ -113,12 +113,12 @@ namespace Com.Amazon.Insights.Session.Client {
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.amazon.insights.session.client']/class[@name='DefaultSessionClient']/field[@name='sessionStore']"
 		[Register ("sessionStore")]
-		protected global::Com.Amazon.Insights.Session.ISessionStore SessionStore {
+		protected global::sessionImpl.ISessionStore SessionStore {
 			get {
 				if (sessionStore_jfieldId == IntPtr.Zero)
 					sessionStore_jfieldId = JNIEnv.GetFieldID (class_ref, "sessionStore", "Lcom/amazon/insights/session/SessionStore;");
 				IntPtr __ret = JNIEnv.GetObjectField (Handle, sessionStore_jfieldId);
-				return global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.ISessionStore> (__ret, JniHandleOwnership.TransferLocalRef);
+				return global::Java.Lang.Object.GetObject<global::sessionImpl.ISessionStore> (__ret, JniHandleOwnership.TransferLocalRef);
 			}
 			set {
 				if (sessionStore_jfieldId == IntPtr.Zero)
@@ -274,7 +274,7 @@ namespace Com.Amazon.Insights.Session.Client {
 		static IntPtr id_ctor_Lcom_amazon_insights_core_InsightsContext_Lcom_amazon_insights_event_InternalEventClient_Lcom_amazon_insights_session_SessionStore_;
 		// Metadata.xml XPath constructor reference: path="/api/package[@name='com.amazon.insights.session.client']/class[@name='DefaultSessionClient']/constructor[@name='DefaultSessionClient' and count(parameter)=3 and parameter[1][@type='com.amazon.insights.core.InsightsContext'] and parameter[2][@type='com.amazon.insights.event.InternalEventClient'] and parameter[3][@type='com.amazon.insights.session.SessionStore']]"
 		[Register (".ctor", "(Lcom/amazon/insights/core/InsightsContext;Lcom/amazon/insights/event/InternalEventClient;Lcom/amazon/insights/session/SessionStore;)V", "")]
-		protected DefaultSessionClient (global::Com.Amazon.Insights.Core.IInsightsContext p0, global::Com.Amazon.Insights.Event.IInternalEventClient p1, global::Com.Amazon.Insights.Session.ISessionStore p2) : base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
+		protected DefaultSessionClient (global::Com.Amazon.Insights.Core.IInsightsContext p0, global::Com.Amazon.Insights.Event.IInternalEventClient p1, global::sessionImpl.ISessionStore p2) : base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
 			if (Handle != IntPtr.Zero)
 				return;
@@ -374,7 +374,7 @@ namespace Com.Amazon.Insights.Session.Client {
 #pragma warning restore 0169
 
 		static IntPtr id_getSession;
-		protected virtual global::Com.Amazon.Insights.Session.Session Session {
+		protected virtual global::sessionImpl.Session Session {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.insights.session.client']/class[@name='DefaultSessionClient']/method[@name='getSession' and count(parameter)=0]"
 			[Register ("getSession", "()Lcom/amazon/insights/session/Session;", "GetGetSessionHandler")]
 			get {
@@ -382,9 +382,9 @@ namespace Com.Amazon.Insights.Session.Client {
 					id_getSession = JNIEnv.GetMethodID (class_ref, "getSession", "()Lcom/amazon/insights/session/Session;");
 
 				if (GetType () == ThresholdType)
-					return global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.Session> (JNIEnv.CallObjectMethod  (Handle, id_getSession), JniHandleOwnership.TransferLocalRef);
+					return global::Java.Lang.Object.GetObject<global::sessionImpl.Session> (JNIEnv.CallObjectMethod  (Handle, id_getSession), JniHandleOwnership.TransferLocalRef);
 				else
-					return global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.Session> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, id_getSession), JniHandleOwnership.TransferLocalRef);
+					return global::Java.Lang.Object.GetObject<global::sessionImpl.Session> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, id_getSession), JniHandleOwnership.TransferLocalRef);
 			}
 		}
 

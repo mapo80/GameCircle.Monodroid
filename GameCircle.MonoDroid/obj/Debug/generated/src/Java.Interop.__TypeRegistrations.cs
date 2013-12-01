@@ -14,10 +14,12 @@ namespace Java.Interop {
 #endif // def MONODROID_TIMING
 			Java.Interop.TypeManager.RegisterPackages (
 					new string[]{
+						"com/amazon/ags/client/whispersync/clock",
 						"com/amazon/ags/html5/factory",
 						"com/amazon/ags/storage",
 					},
 					new Converter<string, Type>[]{
+						lookup_com_amazon_ags_client_whispersync_clock_package,
 						lookup_com_amazon_ags_html5_factory_package,
 						lookup_com_amazon_ags_storage_package,
 					});
@@ -33,6 +35,21 @@ namespace Java.Interop {
 			if (managedType == null)
 				return null;
 			return Type.GetType (managedType);
+		}
+
+		static string[] package_com_amazon_ags_client_whispersync_clock_mappings;
+		static Type lookup_com_amazon_ags_client_whispersync_clock_package (string klass)
+		{
+			if (package_com_amazon_ags_client_whispersync_clock_mappings == null) {
+				package_com_amazon_ags_client_whispersync_clock_mappings = new string[]{
+					"com/amazon/ags/client/whispersync/clock/ClockSkewSharedPrefs:clockInterface.ClockSkewSharedPrefs",
+					"com/amazon/ags/client/whispersync/clock/ClockUtil:clockInterface.ClockUtil",
+					"com/amazon/ags/client/whispersync/clock/GameDataServiceSyncedClock:clockInterface.GameDataServiceSyncedClock",
+					"com/amazon/ags/client/whispersync/clock/LocalClock:clockInterface.LocalClock",
+				};
+			}
+
+			return Lookup (package_com_amazon_ags_client_whispersync_clock_mappings, klass);
 		}
 
 		static string[] package_com_amazon_ags_html5_factory_mappings;

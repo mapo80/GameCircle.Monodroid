@@ -1,11 +1,5 @@
 <metadata>
-	<!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
+
   <attr
     path="/api/package[@name='com.amazon.identity.auth.device.dataobject']/class[@name='AppInfo']/method[@name='getDataSource' and count(parameter)=1 and parameter[1][@type='android.content.Context']]"
     name="managedReturn">Com.Amazon.Identity.Auth.Device.Datastore.AbstractDataSource</attr>
@@ -55,4 +49,16 @@
    <attr
     path="/api/package[@name='com.amazon.identity.auth.device.thread']/class[@name='MAPCallbackFuture']/method[@name='get']"
     name="managedReturn">Java.Lang.Object</attr>
+
+	<attr
+		path="/api/package[@name='com.amazon.identity.auth.device.token']"
+		name="managedName">tokenImpl</attr>
+	
+<!--	<attr path="/api/package[@name='com.amazon.identity.auth.device.endpoint']/class[@extends='AbstractTokenRequest/MyHttpClient']" name="extends">mono.android.app.IntentService</attr>-->
+
+	<remove-node path="/api/package[@name='com.amazon.identity.auth.device.endpoint']/class[@name='AbstractJSONTokenResponse']/field[@name='RESPONSE']" />
+	<remove-node path="/api/package[@name='com.amazon.identity.auth.device.token']/class[@name='AccessToken']/field[@name='PRE_EXPIRATION_PERIOD']" />
+	<remove-node path="/api/package[@name='com.amazon.identity.auth.device.token']/class[@name='AccessToken']/field[@name='NEVER_EXPIRE']" />
+	<remove-node path="/api/package[@name='com.amazon.identity.auth.device.endpoint']/class[@name='AbstractTokenRequest']/field[@name='DOMAIN']" />
+	<remove-node path="/api/package[@name='com.amazon.identity.auth.device.endpoint']/class[@name='AbstractTokenRequest']/field[@name='postParameters']" />
 </metadata>

@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 
-namespace Com.Amazon.Identity.Auth.Device.Token {
+namespace tokenImpl {
 
 	// Metadata.xml XPath class reference: path="/api/package[@name='com.amazon.identity.auth.device.token']/class[@name='MAPCookie']"
 	[global::Android.Runtime.Register ("com/amazon/identity/auth/device/token/MAPCookie", DoNotGenerateAcw=true)]
-	public partial class MAPCookie : global::Java.Lang.Object, global::Com.Amazon.Identity.Auth.Device.Token.IToken, global::Java.IO.ISerializable, global::Org.Apache.Http.Cookies.ICookie {
+	public partial class MAPCookie : global::Java.Lang.Object, global::tokenImpl.IToken, global::Java.IO.ISerializable, global::Org.Apache.Http.Cookies.ICookie {
 
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.amazon.identity.auth.device.token']/class[@name='MAPCookie']/field[@name='COOKIE_DATE_FORMAT']"
@@ -173,7 +173,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetComment (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewString (__this.Comment);
 		}
 #pragma warning restore 0169
@@ -204,7 +204,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetCommentURL (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewString (__this.CommentURL);
 		}
 #pragma warning restore 0169
@@ -235,7 +235,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetData (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return global::Android.Runtime.JavaDictionary<string, string>.ToLocalJniHandle (__this.Data);
 		}
 #pragma warning restore 0169
@@ -266,7 +266,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetDirectedId (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewString (__this.DirectedId);
 		}
 #pragma warning restore 0169
@@ -297,7 +297,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetDomain (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewString (__this.Domain);
 		}
 #pragma warning restore 0169
@@ -328,7 +328,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetExpiryDate (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.ToLocalJniHandle (__this.ExpiryDate);
 		}
 #pragma warning restore 0169
@@ -359,7 +359,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static bool n_HasExpired (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return __this.HasExpired;
 		}
 #pragma warning restore 0169
@@ -390,7 +390,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static bool n_IsHttpOnly (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return __this.HttpOnly;
 		}
 #pragma warning restore 0169
@@ -406,7 +406,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static void n_SetHttpOnly_Z (IntPtr jnienv, IntPtr native__this, bool p0)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			__this.HttpOnly = p0;
 		}
 #pragma warning restore 0169
@@ -449,7 +449,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static bool n_IsPersistent (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return __this.IsPersistent;
 		}
 #pragma warning restore 0169
@@ -480,7 +480,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static bool n_IsSecure (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return __this.IsSecure;
 		}
 #pragma warning restore 0169
@@ -511,7 +511,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetLocalTimestamp (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.ToLocalJniHandle (__this.LocalTimestamp);
 		}
 #pragma warning restore 0169
@@ -542,7 +542,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetName (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewString (__this.Name);
 		}
 #pragma warning restore 0169
@@ -573,7 +573,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetPath (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewString (__this.Path);
 		}
 #pragma warning restore 0169
@@ -589,7 +589,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static void n_SetPath_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			__this.Path = p0;
 		}
@@ -635,7 +635,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetType (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewString (__this.Type);
 		}
 #pragma warning restore 0169
@@ -666,7 +666,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetValue (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewString (__this.Value);
 		}
 #pragma warning restore 0169
@@ -697,7 +697,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static int n_GetVersion (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return __this.Version;
 		}
 #pragma warning restore 0169
@@ -766,7 +766,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetAttribute_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.NewString (__this.GetAttribute (p0));
 			return __ret;
@@ -830,7 +830,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetPorts (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewArray (__this.GetPorts ());
 		}
 #pragma warning restore 0169
@@ -871,7 +871,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static bool n_IsExpired_Ljava_util_Date_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			global::Java.Util.Date p0 = global::Java.Lang.Object.GetObject<global::Java.Util.Date> (native_p0, JniHandleOwnership.DoNotTransfer);
 			bool __ret = __this.IsExpired (p0);
 			return __ret;
@@ -905,7 +905,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_SetAttribute_Ljava_lang_String_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			string p1 = JNIEnv.GetString (native_p1, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.NewString (__this.SetAttribute (p0, p1));
@@ -944,7 +944,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static void n_SetExpiryDate_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			__this.SetExpiryDate (p0);
 		}
@@ -977,7 +977,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static void n_SetPorts_arrayI (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			int[] p0 = (int[]) JNIEnv.GetArray (native_p0, JniHandleOwnership.DoNotTransfer, typeof (int));
 			__this.SetPorts (p0);
 			if (p0 != null)
@@ -1015,7 +1015,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static void n_SetSecure_Z (IntPtr jnienv, IntPtr native__this, bool p0)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.MAPCookie __this = global::Java.Lang.Object.GetObject<global::tokenImpl.MAPCookie> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			__this.SetSecure (p0);
 		}
 #pragma warning restore 0169

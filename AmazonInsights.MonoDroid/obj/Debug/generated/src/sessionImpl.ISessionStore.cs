@@ -2,20 +2,20 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 
-namespace Com.Amazon.Insights.Session {
+namespace sessionImpl {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.amazon.insights.session']/interface[@name='SessionStore']"
-	[Register ("com/amazon/insights/session/SessionStore", "", "Com.Amazon.Insights.Session.ISessionStoreInvoker")]
+	[Register ("com/amazon/insights/session/SessionStore", "", "sessionImpl.ISessionStoreInvoker")]
 	public partial interface ISessionStore : IJavaObject {
 
-		global::Com.Amazon.Insights.Session.Session Session {
+		global::sessionImpl.Session Session {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.insights.session']/interface[@name='SessionStore']/method[@name='getSession' and count(parameter)=0]"
-			[Register ("getSession", "()Lcom/amazon/insights/session/Session;", "GetGetSessionHandler:Com.Amazon.Insights.Session.ISessionStoreInvoker, AmazonInsights.MonoDroid")] get;
+			[Register ("getSession", "()Lcom/amazon/insights/session/Session;", "GetGetSessionHandler:sessionImpl.ISessionStoreInvoker, AmazonInsights.MonoDroid")] get;
 		}
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.insights.session']/interface[@name='SessionStore']/method[@name='storeSession' and count(parameter)=1 and parameter[1][@type='com.amazon.insights.session.Session']]"
-		[Register ("storeSession", "(Lcom/amazon/insights/session/Session;)V", "GetStoreSession_Lcom_amazon_insights_session_Session_Handler:Com.Amazon.Insights.Session.ISessionStoreInvoker, AmazonInsights.MonoDroid")]
-		void StoreSession (global::Com.Amazon.Insights.Session.Session p0);
+		[Register ("storeSession", "(Lcom/amazon/insights/session/Session;)V", "GetStoreSession_Lcom_amazon_insights_session_Session_Handler:sessionImpl.ISessionStoreInvoker, AmazonInsights.MonoDroid")]
+		void StoreSession (global::sessionImpl.Session p0);
 
 	}
 
@@ -72,17 +72,17 @@ namespace Com.Amazon.Insights.Session {
 
 		static IntPtr n_GetSession (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Insights.Session.ISessionStore __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.ISessionStore> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::sessionImpl.ISessionStore __this = global::Java.Lang.Object.GetObject<global::sessionImpl.ISessionStore> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.ToLocalJniHandle (__this.Session);
 		}
 #pragma warning restore 0169
 
 		IntPtr id_getSession;
-		public global::Com.Amazon.Insights.Session.Session Session {
+		public global::sessionImpl.Session Session {
 			get {
 				if (id_getSession == IntPtr.Zero)
 					id_getSession = JNIEnv.GetMethodID (class_ref, "getSession", "()Lcom/amazon/insights/session/Session;");
-				return global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.Session> (JNIEnv.CallObjectMethod (Handle, id_getSession), JniHandleOwnership.TransferLocalRef);
+				return global::Java.Lang.Object.GetObject<global::sessionImpl.Session> (JNIEnv.CallObjectMethod (Handle, id_getSession), JniHandleOwnership.TransferLocalRef);
 			}
 		}
 
@@ -97,14 +97,14 @@ namespace Com.Amazon.Insights.Session {
 
 		static void n_StoreSession_Lcom_amazon_insights_session_Session_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
 		{
-			global::Com.Amazon.Insights.Session.ISessionStore __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.ISessionStore> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-			global::Com.Amazon.Insights.Session.Session p0 = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.Session> (native_p0, JniHandleOwnership.DoNotTransfer);
+			global::sessionImpl.ISessionStore __this = global::Java.Lang.Object.GetObject<global::sessionImpl.ISessionStore> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::sessionImpl.Session p0 = global::Java.Lang.Object.GetObject<global::sessionImpl.Session> (native_p0, JniHandleOwnership.DoNotTransfer);
 			__this.StoreSession (p0);
 		}
 #pragma warning restore 0169
 
 		IntPtr id_storeSession_Lcom_amazon_insights_session_Session_;
-		public void StoreSession (global::Com.Amazon.Insights.Session.Session p0)
+		public void StoreSession (global::sessionImpl.Session p0)
 		{
 			if (id_storeSession_Lcom_amazon_insights_session_Session_ == IntPtr.Zero)
 				id_storeSession_Lcom_amazon_insights_session_Session_ = JNIEnv.GetMethodID (class_ref, "storeSession", "(Lcom/amazon/insights/session/Session;)V");

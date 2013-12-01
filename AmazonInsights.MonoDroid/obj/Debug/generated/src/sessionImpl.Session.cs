@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 
-namespace Com.Amazon.Insights.Session {
+namespace sessionImpl {
 
 	// Metadata.xml XPath class reference: path="/api/package[@name='com.amazon.insights.session']/class[@name='Session']"
 	[global::Android.Runtime.Register ("com/amazon/insights/session/Session", DoNotGenerateAcw=true)]
@@ -117,7 +117,7 @@ namespace Com.Amazon.Insights.Session {
 
 		static bool n_IsPaused (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Insights.Session.Session __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::sessionImpl.Session __this = global::Java.Lang.Object.GetObject<global::sessionImpl.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return __this.IsPaused;
 		}
 #pragma warning restore 0169
@@ -148,7 +148,7 @@ namespace Com.Amazon.Insights.Session {
 
 		static IntPtr n_GetSessionDuration (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Insights.Session.Session __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::sessionImpl.Session __this = global::Java.Lang.Object.GetObject<global::sessionImpl.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.ToLocalJniHandle (__this.SessionDuration);
 		}
 #pragma warning restore 0169
@@ -179,7 +179,7 @@ namespace Com.Amazon.Insights.Session {
 
 		static IntPtr n_GetSessionID (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Insights.Session.Session __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::sessionImpl.Session __this = global::Java.Lang.Object.GetObject<global::sessionImpl.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewString (__this.SessionID);
 		}
 #pragma warning restore 0169
@@ -210,7 +210,7 @@ namespace Com.Amazon.Insights.Session {
 
 		static long n_GetStartTime (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Insights.Session.Session __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::sessionImpl.Session __this = global::Java.Lang.Object.GetObject<global::sessionImpl.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return __this.StartTime;
 		}
 #pragma warning restore 0169
@@ -241,7 +241,7 @@ namespace Com.Amazon.Insights.Session {
 
 		static IntPtr n_GetStopTime (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Insights.Session.Session __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::sessionImpl.Session __this = global::Java.Lang.Object.GetObject<global::sessionImpl.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.ToLocalJniHandle (__this.StopTime);
 		}
 #pragma warning restore 0169
@@ -272,7 +272,7 @@ namespace Com.Amazon.Insights.Session {
 
 		static IntPtr n_GenerateSessionID_Lcom_amazon_insights_core_InsightsContext_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
 		{
-			global::Com.Amazon.Insights.Session.Session __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::sessionImpl.Session __this = global::Java.Lang.Object.GetObject<global::sessionImpl.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			global::Com.Amazon.Insights.Core.IInsightsContext p0 = (global::Com.Amazon.Insights.Core.IInsightsContext)global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.IInsightsContext> (native_p0, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.NewString (__this.GenerateSessionID (p0));
 			return __ret;
@@ -298,12 +298,12 @@ namespace Com.Amazon.Insights.Session {
 		static IntPtr id_getSessionFromSerializedSession_Ljava_lang_String_;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.insights.session']/class[@name='Session']/method[@name='getSessionFromSerializedSession' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
 		[Register ("getSessionFromSerializedSession", "(Ljava/lang/String;)Lcom/amazon/insights/session/Session;", "")]
-		public static global::Com.Amazon.Insights.Session.Session GetSessionFromSerializedSession (string p0)
+		public static global::sessionImpl.Session GetSessionFromSerializedSession (string p0)
 		{
 			if (id_getSessionFromSerializedSession_Ljava_lang_String_ == IntPtr.Zero)
 				id_getSessionFromSerializedSession_Ljava_lang_String_ = JNIEnv.GetStaticMethodID (class_ref, "getSessionFromSerializedSession", "(Ljava/lang/String;)Lcom/amazon/insights/session/Session;");
 			IntPtr native_p0 = JNIEnv.NewString (p0);
-			global::Com.Amazon.Insights.Session.Session __ret = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.Session> (JNIEnv.CallStaticObjectMethod  (class_ref, id_getSessionFromSerializedSession_Ljava_lang_String_, new JValue (native_p0)), JniHandleOwnership.TransferLocalRef);
+			global::sessionImpl.Session __ret = global::Java.Lang.Object.GetObject<global::sessionImpl.Session> (JNIEnv.CallStaticObjectMethod  (class_ref, id_getSessionFromSerializedSession_Ljava_lang_String_, new JValue (native_p0)), JniHandleOwnership.TransferLocalRef);
 			JNIEnv.DeleteLocalRef (native_p0);
 			return __ret;
 		}
@@ -311,11 +311,11 @@ namespace Com.Amazon.Insights.Session {
 		static IntPtr id_newInstance_Lcom_amazon_insights_core_InsightsContext_;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.insights.session']/class[@name='Session']/method[@name='newInstance' and count(parameter)=1 and parameter[1][@type='com.amazon.insights.core.InsightsContext']]"
 		[Register ("newInstance", "(Lcom/amazon/insights/core/InsightsContext;)Lcom/amazon/insights/session/Session;", "")]
-		public static global::Com.Amazon.Insights.Session.Session NewInstance (global::Com.Amazon.Insights.Core.IInsightsContext p0)
+		public static global::sessionImpl.Session NewInstance (global::Com.Amazon.Insights.Core.IInsightsContext p0)
 		{
 			if (id_newInstance_Lcom_amazon_insights_core_InsightsContext_ == IntPtr.Zero)
 				id_newInstance_Lcom_amazon_insights_core_InsightsContext_ = JNIEnv.GetStaticMethodID (class_ref, "newInstance", "(Lcom/amazon/insights/core/InsightsContext;)Lcom/amazon/insights/session/Session;");
-			global::Com.Amazon.Insights.Session.Session __ret = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.Session> (JNIEnv.CallStaticObjectMethod  (class_ref, id_newInstance_Lcom_amazon_insights_core_InsightsContext_, new JValue (p0)), JniHandleOwnership.TransferLocalRef);
+			global::sessionImpl.Session __ret = global::Java.Lang.Object.GetObject<global::sessionImpl.Session> (JNIEnv.CallStaticObjectMethod  (class_ref, id_newInstance_Lcom_amazon_insights_core_InsightsContext_, new JValue (p0)), JniHandleOwnership.TransferLocalRef);
 			return __ret;
 		}
 
@@ -330,7 +330,7 @@ namespace Com.Amazon.Insights.Session {
 
 		static void n_Pause (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Insights.Session.Session __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::sessionImpl.Session __this = global::Java.Lang.Object.GetObject<global::sessionImpl.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			__this.Pause ();
 		}
 #pragma warning restore 0169
@@ -360,7 +360,7 @@ namespace Com.Amazon.Insights.Session {
 
 		static void n_Resume (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Insights.Session.Session __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::sessionImpl.Session __this = global::Java.Lang.Object.GetObject<global::sessionImpl.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			__this.Resume ();
 		}
 #pragma warning restore 0169
@@ -390,7 +390,7 @@ namespace Com.Amazon.Insights.Session {
 
 		static IntPtr n_ToJSONObject (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Insights.Session.Session __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::sessionImpl.Session __this = global::Java.Lang.Object.GetObject<global::sessionImpl.Session> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.ToLocalJniHandle (__this.ToJSONObject ());
 		}
 #pragma warning restore 0169

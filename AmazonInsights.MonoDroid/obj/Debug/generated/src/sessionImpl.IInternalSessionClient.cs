@@ -2,18 +2,18 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 
-namespace Com.Amazon.Insights.Session {
+namespace sessionImpl {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.amazon.insights.session']/interface[@name='InternalSessionClient']"
-	[Register ("com/amazon/insights/session/InternalSessionClient", "", "Com.Amazon.Insights.Session.IInternalSessionClientInvoker")]
+	[Register ("com/amazon/insights/session/InternalSessionClient", "", "sessionImpl.IInternalSessionClientInvoker")]
 	public partial interface IInternalSessionClient : global::Com.Amazon.Insights.ISessionClient {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.insights.session']/interface[@name='InternalSessionClient']/method[@name='startSession' and count(parameter)=0]"
-		[Register ("startSession", "()V", "GetStartSessionHandler:Com.Amazon.Insights.Session.IInternalSessionClientInvoker, AmazonInsights.MonoDroid")]
+		[Register ("startSession", "()V", "GetStartSessionHandler:sessionImpl.IInternalSessionClientInvoker, AmazonInsights.MonoDroid")]
 		void StartSession ();
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.insights.session']/interface[@name='InternalSessionClient']/method[@name='stopSession' and count(parameter)=0]"
-		[Register ("stopSession", "()V", "GetStopSessionHandler:Com.Amazon.Insights.Session.IInternalSessionClientInvoker, AmazonInsights.MonoDroid")]
+		[Register ("stopSession", "()V", "GetStopSessionHandler:sessionImpl.IInternalSessionClientInvoker, AmazonInsights.MonoDroid")]
 		void StopSession ();
 
 	}
@@ -71,7 +71,7 @@ namespace Com.Amazon.Insights.Session {
 
 		static void n_StartSession (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Insights.Session.IInternalSessionClient __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.IInternalSessionClient> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::sessionImpl.IInternalSessionClient __this = global::Java.Lang.Object.GetObject<global::sessionImpl.IInternalSessionClient> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			__this.StartSession ();
 		}
 #pragma warning restore 0169
@@ -95,7 +95,7 @@ namespace Com.Amazon.Insights.Session {
 
 		static void n_StopSession (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Insights.Session.IInternalSessionClient __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.IInternalSessionClient> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::sessionImpl.IInternalSessionClient __this = global::Java.Lang.Object.GetObject<global::sessionImpl.IInternalSessionClient> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			__this.StopSession ();
 		}
 #pragma warning restore 0169
@@ -119,7 +119,7 @@ namespace Com.Amazon.Insights.Session {
 
 		static void n_PauseSession (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Insights.Session.IInternalSessionClient __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.IInternalSessionClient> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::sessionImpl.IInternalSessionClient __this = global::Java.Lang.Object.GetObject<global::sessionImpl.IInternalSessionClient> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			__this.PauseSession ();
 		}
 #pragma warning restore 0169
@@ -143,7 +143,7 @@ namespace Com.Amazon.Insights.Session {
 
 		static void n_ResumeSession (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Insights.Session.IInternalSessionClient __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Session.IInternalSessionClient> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::sessionImpl.IInternalSessionClient __this = global::Java.Lang.Object.GetObject<global::sessionImpl.IInternalSessionClient> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			__this.ResumeSession ();
 		}
 #pragma warning restore 0169

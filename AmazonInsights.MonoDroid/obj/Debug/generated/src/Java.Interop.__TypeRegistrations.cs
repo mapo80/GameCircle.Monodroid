@@ -14,14 +14,18 @@ namespace Java.Interop {
 #endif // def MONODROID_TIMING
 			Java.Interop.TypeManager.RegisterPackages (
 					new string[]{
+						"com/amazon/insights/core/configuration",
 						"com/amazon/insights/core/http",
 						"com/amazon/insights/core/idresolver",
 						"com/amazon/insights/core/system",
+						"com/amazon/insights/session",
 					},
 					new Converter<string, Type>[]{
+						lookup_com_amazon_insights_core_configuration_package,
 						lookup_com_amazon_insights_core_http_package,
 						lookup_com_amazon_insights_core_idresolver_package,
 						lookup_com_amazon_insights_core_system_package,
+						lookup_com_amazon_insights_session_package,
 					});
 #if MONODROID_TIMING
 			var end = DateTime.Now;
@@ -35,6 +39,18 @@ namespace Java.Interop {
 			if (managedType == null)
 				return null;
 			return Type.GetType (managedType);
+		}
+
+		static string[] package_com_amazon_insights_core_configuration_mappings;
+		static Type lookup_com_amazon_insights_core_configuration_package (string klass)
+		{
+			if (package_com_amazon_insights_core_configuration_mappings == null) {
+				package_com_amazon_insights_core_configuration_mappings = new string[]{
+					"com/amazon/insights/core/configuration/HttpCachingConfiguration:configurationImpl.HttpCachingConfiguration",
+				};
+			}
+
+			return Lookup (package_com_amazon_insights_core_configuration_mappings, klass);
 		}
 
 		static string[] package_com_amazon_insights_core_http_mappings;
@@ -77,6 +93,20 @@ namespace Java.Interop {
 			}
 
 			return Lookup (package_com_amazon_insights_core_system_mappings, klass);
+		}
+
+		static string[] package_com_amazon_insights_session_mappings;
+		static Type lookup_com_amazon_insights_session_package (string klass)
+		{
+			if (package_com_amazon_insights_session_mappings == null) {
+				package_com_amazon_insights_session_mappings = new string[]{
+					"com/amazon/insights/session/FileSessionStore:sessionImpl.FileSessionStore",
+					"com/amazon/insights/session/Session:sessionImpl.Session",
+					"com/amazon/insights/session/SessionStoreException:sessionImpl.SessionStoreException",
+				};
+			}
+
+			return Lookup (package_com_amazon_insights_session_mappings, klass);
 		}
 	}
 }

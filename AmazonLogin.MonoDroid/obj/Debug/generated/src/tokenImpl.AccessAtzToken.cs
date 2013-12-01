@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 
-namespace Com.Amazon.Identity.Auth.Device.Token {
+namespace tokenImpl {
 
 	// Metadata.xml XPath class reference: path="/api/package[@name='com.amazon.identity.auth.device.token']/class[@name='AccessAtzToken']"
 	[global::Android.Runtime.Register ("com/amazon/identity/auth/device/token/AccessAtzToken", DoNotGenerateAcw=true)]
@@ -154,7 +154,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 		static IntPtr id_ctor_Lcom_amazon_identity_auth_device_token_AccessAtzToken_;
 		// Metadata.xml XPath constructor reference: path="/api/package[@name='com.amazon.identity.auth.device.token']/class[@name='AccessAtzToken']/constructor[@name='AccessAtzToken' and count(parameter)=1 and parameter[1][@type='com.amazon.identity.auth.device.token.AccessAtzToken']]"
 		[Register (".ctor", "(Lcom/amazon/identity/auth/device/token/AccessAtzToken;)V", "")]
-		public AccessAtzToken (global::Com.Amazon.Identity.Auth.Device.Token.AccessAtzToken p0) : base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
+		public AccessAtzToken (global::tokenImpl.AccessAtzToken p0) : base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
 		{
 			if (Handle != IntPtr.Zero)
 				return;

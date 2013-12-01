@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 
-namespace Com.Amazon.Identity.Auth.Device.Token {
+namespace tokenImpl {
 
 	// Metadata.xml XPath class reference: path="/api/package[@name='com.amazon.identity.auth.device.token']/class[@name='AccessToken']"
 	[global::Android.Runtime.Register ("com/amazon/identity/auth/device/token/AccessToken", DoNotGenerateAcw=true)]
-	public partial class AccessToken : global::Com.Amazon.Identity.Auth.Device.Token.AbstractToken {
+	public partial class AccessToken : global::tokenImpl.AbstractToken {
 
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.amazon.identity.auth.device.token']/class[@name='AccessToken']/field[@name='ALWAYS_EXPIRE']"
@@ -127,7 +127,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetCurrentTime (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.AccessToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.AccessToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.AccessToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.AccessToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.ToLocalJniHandle (__this.CurrentTime);
 		}
 #pragma warning restore 0169
@@ -158,7 +158,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static long n_GetExpiresIn (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.AccessToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.AccessToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.AccessToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.AccessToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return __this.ExpiresIn;
 		}
 #pragma warning restore 0169
@@ -189,7 +189,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static bool n_HasExpired (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.AccessToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.AccessToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.AccessToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.AccessToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return __this.HasExpired;
 		}
 #pragma warning restore 0169
@@ -220,7 +220,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static long n_GetPreExpirationPeriod (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.AccessToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.AccessToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.AccessToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.AccessToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return __this.PreExpirationPeriod;
 		}
 #pragma warning restore 0169
@@ -251,7 +251,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetType (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.AccessToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.AccessToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.AccessToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.AccessToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewString (__this.Type);
 		}
 #pragma warning restore 0169
@@ -282,7 +282,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static bool n_NeverExpire (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.AccessToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.AccessToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.AccessToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.AccessToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return __this.NeverExpire ();
 		}
 #pragma warning restore 0169
@@ -312,7 +312,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static void n_SetExpirationTime_J (IntPtr jnienv, IntPtr native__this, long p0)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.AccessToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.AccessToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.AccessToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.AccessToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			__this.SetExpirationTime (p0);
 		}
 #pragma warning restore 0169

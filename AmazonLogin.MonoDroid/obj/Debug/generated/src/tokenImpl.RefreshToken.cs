@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 
-namespace Com.Amazon.Identity.Auth.Device.Token {
+namespace tokenImpl {
 
 	// Metadata.xml XPath class reference: path="/api/package[@name='com.amazon.identity.auth.device.token']/class[@name='RefreshToken']"
 	[global::Android.Runtime.Register ("com/amazon/identity/auth/device/token/RefreshToken", DoNotGenerateAcw=true)]
-	public partial class RefreshToken : global::Com.Amazon.Identity.Auth.Device.Token.AbstractToken {
+	public partial class RefreshToken : global::tokenImpl.AbstractToken {
 
 
 		static IntPtr DEFAULT_REGION_HINT_jfieldId;
@@ -209,7 +209,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetDMSDirectedId (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.RefreshToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.RefreshToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.RefreshToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.RefreshToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewString (__this.DMSDirectedId);
 		}
 #pragma warning restore 0169
@@ -240,7 +240,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetRegionHint (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.RefreshToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.RefreshToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.RefreshToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.RefreshToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.ToLocalJniHandle (__this.RegionHint);
 		}
 #pragma warning restore 0169
@@ -271,7 +271,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetType (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.RefreshToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.RefreshToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.RefreshToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.RefreshToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewString (__this.Type);
 		}
 #pragma warning restore 0169
@@ -302,7 +302,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetUniqueId (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.RefreshToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.RefreshToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.RefreshToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.RefreshToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewString (__this.UniqueId);
 		}
 #pragma warning restore 0169
@@ -333,7 +333,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_SetDMSDirectedId_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.RefreshToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.RefreshToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.RefreshToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.RefreshToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.NewString (__this.SetDMSDirectedId (p0));
 			return __ret;

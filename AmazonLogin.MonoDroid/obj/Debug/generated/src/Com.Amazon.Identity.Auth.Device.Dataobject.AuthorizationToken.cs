@@ -6,7 +6,7 @@ namespace Com.Amazon.Identity.Auth.Device.Dataobject {
 
 	// Metadata.xml XPath class reference: path="/api/package[@name='com.amazon.identity.auth.device.dataobject']/class[@name='AuthorizationToken']"
 	[global::Android.Runtime.Register ("com/amazon/identity/auth/device/dataobject/AuthorizationToken", DoNotGenerateAcw=true)]
-	public abstract partial class AuthorizationToken : global::Com.Amazon.Identity.Auth.Device.Dataobject.AbstractDataObject, global::Com.Amazon.Identity.Auth.Device.Token.IToken {
+	public abstract partial class AuthorizationToken : global::Com.Amazon.Identity.Auth.Device.Dataobject.AbstractDataObject, global::tokenImpl.IToken {
 
 
 		static IntPtr ALL_COLUMNS_jfieldId;

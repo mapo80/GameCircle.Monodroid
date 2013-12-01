@@ -2,17 +2,17 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 
-namespace Com.Amazon.Ags.Client.Whispersync.Clock {
+namespace clockInterface {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.amazon.ags.client.whispersync.clock']/interface[@name='ClockSkewStorage']"
-	[Register ("com/amazon/ags/client/whispersync/clock/ClockSkewStorage", "", "Com.Amazon.Ags.Client.Whispersync.Clock.IClockSkewStorageInvoker")]
+	[Register ("com/amazon/ags/client/whispersync/clock/ClockSkewStorage", "", "clockInterface.IClockSkewStorageInvoker")]
 	public partial interface IClockSkewStorage : IJavaObject {
 
 		long ClockSkew {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.client.whispersync.clock']/interface[@name='ClockSkewStorage']/method[@name='getClockSkew' and count(parameter)=0]"
-			[Register ("getClockSkew", "()J", "GetGetClockSkewHandler:Com.Amazon.Ags.Client.Whispersync.Clock.IClockSkewStorageInvoker, GameCircle.MonoDroid")] get;
+			[Register ("getClockSkew", "()J", "GetGetClockSkewHandler:clockInterface.IClockSkewStorageInvoker, GameCircle.MonoDroid")] get;
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.client.whispersync.clock']/interface[@name='ClockSkewStorage']/method[@name='setClockSkew' and count(parameter)=1 and parameter[1][@type='long']]"
-			[Register ("setClockSkew", "(J)V", "GetSetClockSkew_JHandler:Com.Amazon.Ags.Client.Whispersync.Clock.IClockSkewStorageInvoker, GameCircle.MonoDroid")] set;
+			[Register ("setClockSkew", "(J)V", "GetSetClockSkew_JHandler:clockInterface.IClockSkewStorageInvoker, GameCircle.MonoDroid")] set;
 		}
 
 	}
@@ -70,7 +70,7 @@ namespace Com.Amazon.Ags.Client.Whispersync.Clock {
 
 		static long n_GetClockSkew (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Ags.Client.Whispersync.Clock.IClockSkewStorage __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Client.Whispersync.Clock.IClockSkewStorage> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::clockInterface.IClockSkewStorage __this = global::Java.Lang.Object.GetObject<global::clockInterface.IClockSkewStorage> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return __this.ClockSkew;
 		}
 #pragma warning restore 0169
@@ -86,7 +86,7 @@ namespace Com.Amazon.Ags.Client.Whispersync.Clock {
 
 		static void n_SetClockSkew_J (IntPtr jnienv, IntPtr native__this, long p0)
 		{
-			global::Com.Amazon.Ags.Client.Whispersync.Clock.IClockSkewStorage __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Client.Whispersync.Clock.IClockSkewStorage> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::clockInterface.IClockSkewStorage __this = global::Java.Lang.Object.GetObject<global::clockInterface.IClockSkewStorage> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			__this.ClockSkew = p0;
 		}
 #pragma warning restore 0169

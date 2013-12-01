@@ -8,5 +8,5 @@
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.identity.auth.device.service", Managed="Com.Amazon.Identity.Auth.Device.Service")]
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.identity.auth.device.shared", Managed="Com.Amazon.Identity.Auth.Device.Shared")]
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.identity.auth.device.thread", Managed="Com.Amazon.Identity.Auth.Device.Thread")]
-[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.identity.auth.device.token", Managed="Com.Amazon.Identity.Auth.Device.Token")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.identity.auth.device.token", Managed="tokenImpl")]
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.identity.auth.device.utils", Managed="Com.Amazon.Identity.Auth.Device.Utils")]

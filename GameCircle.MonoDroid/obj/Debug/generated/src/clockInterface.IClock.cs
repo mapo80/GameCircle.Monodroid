@@ -2,15 +2,15 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 
-namespace Com.Amazon.Ags.Client.Whispersync.Clock {
+namespace clockInterface {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.amazon.ags.client.whispersync.clock']/interface[@name='Clock']"
-	[Register ("com/amazon/ags/client/whispersync/clock/Clock", "", "Com.Amazon.Ags.Client.Whispersync.Clock.IClockInvoker")]
+	[Register ("com/amazon/ags/client/whispersync/clock/Clock", "", "clockInterface.IClockInvoker")]
 	public partial interface IClock : IJavaObject {
 
 		long CurrentTimeSeconds {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.client.whispersync.clock']/interface[@name='Clock']/method[@name='getCurrentTimeSeconds' and count(parameter)=0]"
-			[Register ("getCurrentTimeSeconds", "()J", "GetGetCurrentTimeSecondsHandler:Com.Amazon.Ags.Client.Whispersync.Clock.IClockInvoker, GameCircle.MonoDroid")] get;
+			[Register ("getCurrentTimeSeconds", "()J", "GetGetCurrentTimeSecondsHandler:clockInterface.IClockInvoker, GameCircle.MonoDroid")] get;
 		}
 
 	}
@@ -68,7 +68,7 @@ namespace Com.Amazon.Ags.Client.Whispersync.Clock {
 
 		static long n_GetCurrentTimeSeconds (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Ags.Client.Whispersync.Clock.IClock __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Client.Whispersync.Clock.IClock> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::clockInterface.IClock __this = global::Java.Lang.Object.GetObject<global::clockInterface.IClock> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return __this.CurrentTimeSeconds;
 		}
 #pragma warning restore 0169

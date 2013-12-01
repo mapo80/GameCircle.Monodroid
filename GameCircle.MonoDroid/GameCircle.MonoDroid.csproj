@@ -61,7 +61,17 @@
     <EmbeddedJar Include="Jars\gamecirclesdk.jar" />
   </ItemGroup>
   <ItemGroup>
-    <ReferenceJar Include="Jars\login-with-amazon-sdk.jar" />
     <ReferenceJar Include="Jars\AmazonInsights-android-sdk-2.0.24.jar" />
+    <ReferenceJar Include="Jars\login-with-amazon-sdk.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AmazonInsights.MonoDroid\AmazonInsights.MonoDroid.csproj">
+      <Project>{F8BB3F84-0A43-4F62-9BA4-F9C965D7538A}</Project>
+      <Name>AmazonInsights.MonoDroid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AmazonLogin.MonoDroid\AmazonLogin.MonoDroid.csproj">
+      <Project>{63534ADA-BBC0-472A-A8C0-47DF6D1979E0}</Project>
+      <Name>AmazonLogin.MonoDroid</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

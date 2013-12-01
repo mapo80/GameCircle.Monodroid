@@ -1,20 +1,26 @@
 <metadata>
-	<!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
+	
+	<remove-node path="/api/package[@name='com.amazon.insights.core.http']/class[@name='DefaultHttpClient.DefaultRequest']/field[@name='headers']" />
+	<remove-node path="/api/package[@name='com.amazon.insights.core.http']/class[@name='DefaultHttpClient.DefaultRequest']/field[@name='method']" />
+	<remove-node path="/api/package[@name='com.amazon.insights.core.http']/class[@name='DefaultHttpClient.DefaultRequest']/field[@name='params']" />
+	<remove-node path="/api/package[@name='com.amazon.insights.core.http']/class[@name='DefaultHttpClient.DefaultRequest']/field[@name='postBody']" />
+	<remove-node path="/api/package[@name='com.amazon.insights.core.http']/class[@name='DefaultHttpClient.DefaultRequest']/field[@name='url']" />
+
+	<remove-node path="/api/package[@name='com.amazon.insights.core.http']/class[@name='DefaultHttpClient.DefaultResponse']/field[@name='code']" />
+	<remove-node path="/api/package[@name='com.amazon.insights.core.http']/class[@name='DefaultHttpClient.DefaultResponse']/field[@name='message']" />
+	<remove-node path="/api/package[@name='com.amazon.insights.core.http']/class[@name='DefaultHttpClient.DefaultResponse']/field[@name='originatingRequest']" />
+	<remove-node path="/api/package[@name='com.amazon.insights.core.http']/class[@name='DefaultHttpClient.DefaultResponse']/field[@name='requestSize']" />
+	<remove-node path="/api/package[@name='com.amazon.insights.core.http']/class[@name='DefaultHttpClient.DefaultResponse']/field[@name='response']" />
+	<remove-node path="/api/package[@name='com.amazon.insights.core.http']/class[@name='DefaultHttpClient.DefaultResponse']/field[@name='responseSize']" />
+
+	<remove-node path="/api/package[@name='com.amazon.insights.session.client']/class[@name='DefaultSessionClient']/field[@name='session']" />
+	<remove-node path="/api/package[@name='com.amazon.insights.core.system']/class[@name='AndroidConnectivity']/field[@name='hasWifi']" />
+
+  <attr path="/api/package/class[@extends='android.app.IntentService']" name="extends">mono.android.app.IntentService</attr>
   <attr
 	 path="/api/package[@name='com.amazon.insights.error']/class[@name='BaseInsightsError']"
 	name="visibility">public</attr>
-<!--  <attr
-	path="/api/package[@name='com.amazon.insights.core.system']/interface[@name='System']"
-	name="managedName">SystemN</attr>-->
-  <attr
-	path="/api/package[@name='com.amazon.insights.core.system']"
-	name="managedName">com.amazon.insights.core.system.amazon</attr>
+
 	<attr path="/api/package[@name='com.amazon.insights.profile']/class[@name='DefaultUserProfile']/method[@name='compareTo']/parameter[1]" name="managedType">Java.Lang.Object</attr>
   <attr
     path="/api/package[@name='com.amazon.insights.event']/class[@name='DefaultEvent']/method[@name='withAttribute' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]"
@@ -22,5 +28,14 @@
   <attr
     path="/api/package[@name='com.amazon.insights.event']/class[@name='DefaultEvent']/method[@name='withMetric' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.Number']]"
     name="managedReturn">Com.Amazon.Insights.IEvent</attr>
+  <attr
+	path="/api/package[@name='com.amazon.insights.core.system']"
+	name="managedName">com.amazon.insights.core.system.amazon</attr>
 
+	<attr
+		path="/api/package[@name='com.amazon.insights.core.configuration']"
+		name="managedName">configurationImpl</attr>
+	<attr
+		path="/api/package[@name='com.amazon.insights.session']"
+		name="managedName">sessionImpl</attr>
 </metadata>

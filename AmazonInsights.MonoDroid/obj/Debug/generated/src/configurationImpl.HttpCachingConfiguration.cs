@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 
-namespace Com.Amazon.Insights.Core.Configuration {
+namespace configurationImpl {
 
 	// Metadata.xml XPath class reference: path="/api/package[@name='com.amazon.insights.core.configuration']/class[@name='HttpCachingConfiguration']"
 	[global::Android.Runtime.Register ("com/amazon/insights/core/configuration/HttpCachingConfiguration", DoNotGenerateAcw=true)]
-	public partial class HttpCachingConfiguration : global::Java.Lang.Object, global::Com.Amazon.Insights.Core.Configuration.IConfiguration {
+	public partial class HttpCachingConfiguration : global::Java.Lang.Object, global::configurationImpl.IConfiguration {
 
 		internal static IntPtr java_class_handle;
 		internal static IntPtr class_ref {
@@ -36,7 +36,7 @@ namespace Com.Amazon.Insights.Core.Configuration {
 
 		static IntPtr n_GetBoolean_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
 		{
-			global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::configurationImpl.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::configurationImpl.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.GetBoolean (p0));
 			return __ret;
@@ -72,7 +72,7 @@ namespace Com.Amazon.Insights.Core.Configuration {
 
 		static IntPtr n_GetDouble_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
 		{
-			global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::configurationImpl.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::configurationImpl.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.GetDouble (p0));
 			return __ret;
@@ -108,7 +108,7 @@ namespace Com.Amazon.Insights.Core.Configuration {
 
 		static IntPtr n_GetInt_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
 		{
-			global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::configurationImpl.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::configurationImpl.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.GetInt (p0));
 			return __ret;
@@ -144,7 +144,7 @@ namespace Com.Amazon.Insights.Core.Configuration {
 
 		static IntPtr n_GetLong_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
 		{
-			global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::configurationImpl.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::configurationImpl.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.GetLong (p0));
 			return __ret;
@@ -180,7 +180,7 @@ namespace Com.Amazon.Insights.Core.Configuration {
 
 		static IntPtr n_GetShort_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
 		{
-			global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::configurationImpl.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::configurationImpl.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.GetShort (p0));
 			return __ret;
@@ -216,7 +216,7 @@ namespace Com.Amazon.Insights.Core.Configuration {
 
 		static IntPtr n_GetString_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
 		{
-			global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::configurationImpl.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::configurationImpl.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.NewString (__this.GetString (p0));
 			return __ret;
@@ -244,12 +244,12 @@ namespace Com.Amazon.Insights.Core.Configuration {
 		static IntPtr id_newInstance_Lcom_amazon_insights_core_InsightsContext_Ljava_util_Map_;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.insights.core.configuration']/class[@name='HttpCachingConfiguration']/method[@name='newInstance' and count(parameter)=2 and parameter[1][@type='com.amazon.insights.core.InsightsContext'] and parameter[2][@type='java.util.Map']]"
 		[Register ("newInstance", "(Lcom/amazon/insights/core/InsightsContext;Ljava/util/Map;)Lcom/amazon/insights/core/configuration/HttpCachingConfiguration;", "")]
-		public static global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration NewInstance (global::Com.Amazon.Insights.Core.IInsightsContext p0, global::System.Collections.Generic.IDictionary<string, string> p1)
+		public static global::configurationImpl.HttpCachingConfiguration NewInstance (global::Com.Amazon.Insights.Core.IInsightsContext p0, global::System.Collections.Generic.IDictionary<string, string> p1)
 		{
 			if (id_newInstance_Lcom_amazon_insights_core_InsightsContext_Ljava_util_Map_ == IntPtr.Zero)
 				id_newInstance_Lcom_amazon_insights_core_InsightsContext_Ljava_util_Map_ = JNIEnv.GetStaticMethodID (class_ref, "newInstance", "(Lcom/amazon/insights/core/InsightsContext;Ljava/util/Map;)Lcom/amazon/insights/core/configuration/HttpCachingConfiguration;");
 			IntPtr native_p1 = global::Android.Runtime.JavaDictionary<string, string>.ToLocalJniHandle (p1);
-			global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration __ret = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration> (JNIEnv.CallStaticObjectMethod  (class_ref, id_newInstance_Lcom_amazon_insights_core_InsightsContext_Ljava_util_Map_, new JValue (p0), new JValue (Java.Interop.JavaObjectExtensions.ToInteroperableCollection (p1))), JniHandleOwnership.TransferLocalRef);
+			global::configurationImpl.HttpCachingConfiguration __ret = global::Java.Lang.Object.GetObject<global::configurationImpl.HttpCachingConfiguration> (JNIEnv.CallStaticObjectMethod  (class_ref, id_newInstance_Lcom_amazon_insights_core_InsightsContext_Ljava_util_Map_, new JValue (p0), new JValue (Java.Interop.JavaObjectExtensions.ToInteroperableCollection (p1))), JniHandleOwnership.TransferLocalRef);
 			JNIEnv.DeleteLocalRef (native_p1);
 			return __ret;
 		}
@@ -265,7 +265,7 @@ namespace Com.Amazon.Insights.Core.Configuration {
 
 		static IntPtr n_OptBoolean_Ljava_lang_String_Ljava_lang_Boolean_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1)
 		{
-			global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::configurationImpl.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::configurationImpl.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			global::Java.Lang.Boolean p1 = global::Java.Lang.Object.GetObject<global::Java.Lang.Boolean> (native_p1, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.OptBoolean (p0, p1));
@@ -302,7 +302,7 @@ namespace Com.Amazon.Insights.Core.Configuration {
 
 		static IntPtr n_OptDouble_Ljava_lang_String_Ljava_lang_Double_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1)
 		{
-			global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::configurationImpl.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::configurationImpl.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			global::Java.Lang.Double p1 = global::Java.Lang.Object.GetObject<global::Java.Lang.Double> (native_p1, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.OptDouble (p0, p1));
@@ -339,7 +339,7 @@ namespace Com.Amazon.Insights.Core.Configuration {
 
 		static IntPtr n_OptInt_Ljava_lang_String_Ljava_lang_Integer_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1)
 		{
-			global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::configurationImpl.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::configurationImpl.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			global::Java.Lang.Integer p1 = global::Java.Lang.Object.GetObject<global::Java.Lang.Integer> (native_p1, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.OptInt (p0, p1));
@@ -376,7 +376,7 @@ namespace Com.Amazon.Insights.Core.Configuration {
 
 		static IntPtr n_OptLong_Ljava_lang_String_Ljava_lang_Long_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1)
 		{
-			global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::configurationImpl.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::configurationImpl.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			global::Java.Lang.Long p1 = global::Java.Lang.Object.GetObject<global::Java.Lang.Long> (native_p1, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.OptLong (p0, p1));
@@ -413,7 +413,7 @@ namespace Com.Amazon.Insights.Core.Configuration {
 
 		static IntPtr n_OptShort_Ljava_lang_String_Ljava_lang_Short_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1)
 		{
-			global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::configurationImpl.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::configurationImpl.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			global::Java.Lang.Short p1 = global::Java.Lang.Object.GetObject<global::Java.Lang.Short> (native_p1, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.OptShort (p0, p1));
@@ -450,7 +450,7 @@ namespace Com.Amazon.Insights.Core.Configuration {
 
 		static IntPtr n_OptString_Ljava_lang_String_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1)
 		{
-			global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::configurationImpl.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::configurationImpl.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			string p1 = JNIEnv.GetString (native_p1, JniHandleOwnership.DoNotTransfer);
 			IntPtr __ret = JNIEnv.NewString (__this.OptString (p0, p1));
@@ -489,7 +489,7 @@ namespace Com.Amazon.Insights.Core.Configuration {
 
 		static void n_Refresh (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::configurationImpl.HttpCachingConfiguration __this = global::Java.Lang.Object.GetObject<global::configurationImpl.HttpCachingConfiguration> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			__this.Refresh ();
 		}
 #pragma warning restore 0169

@@ -202,5 +202,36 @@ namespace Com.Amazon.Ags.Auth {
 				return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, id_tryGetToken), JniHandleOwnership.TransferLocalRef);
 		}
 
+		static Delegate cb_tryLogin_Lcom_amazon_identity_auth_device_authorization_api_AuthorizationListener_;
+#pragma warning disable 0169
+		static Delegate GetTryLogin_Lcom_amazon_identity_auth_device_authorization_api_AuthorizationListener_Handler ()
+		{
+			if (cb_tryLogin_Lcom_amazon_identity_auth_device_authorization_api_AuthorizationListener_ == null)
+				cb_tryLogin_Lcom_amazon_identity_auth_device_authorization_api_AuthorizationListener_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_TryLogin_Lcom_amazon_identity_auth_device_authorization_api_AuthorizationListener_);
+			return cb_tryLogin_Lcom_amazon_identity_auth_device_authorization_api_AuthorizationListener_;
+		}
+
+		static void n_TryLogin_Lcom_amazon_identity_auth_device_authorization_api_AuthorizationListener_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+		{
+			global::Com.Amazon.Ags.Auth.AuthManager __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Auth.AuthManager> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::Com.Amazon.Identity.Auth.Device.Authorization.Api.IAuthorizationListener p0 = (global::Com.Amazon.Identity.Auth.Device.Authorization.Api.IAuthorizationListener)global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Authorization.Api.IAuthorizationListener> (native_p0, JniHandleOwnership.DoNotTransfer);
+			__this.TryLogin (p0);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_tryLogin_Lcom_amazon_identity_auth_device_authorization_api_AuthorizationListener_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.auth']/class[@name='AuthManager']/method[@name='tryLogin' and count(parameter)=1 and parameter[1][@type='com.amazon.identity.auth.device.authorization.api.AuthorizationListener']]"
+		[Register ("tryLogin", "(Lcom/amazon/identity/auth/device/authorization/api/AuthorizationListener;)V", "GetTryLogin_Lcom_amazon_identity_auth_device_authorization_api_AuthorizationListener_Handler")]
+		public virtual void TryLogin (global::Com.Amazon.Identity.Auth.Device.Authorization.Api.IAuthorizationListener p0)
+		{
+			if (id_tryLogin_Lcom_amazon_identity_auth_device_authorization_api_AuthorizationListener_ == IntPtr.Zero)
+				id_tryLogin_Lcom_amazon_identity_auth_device_authorization_api_AuthorizationListener_ = JNIEnv.GetMethodID (class_ref, "tryLogin", "(Lcom/amazon/identity/auth/device/authorization/api/AuthorizationListener;)V");
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_tryLogin_Lcom_amazon_identity_auth_device_authorization_api_AuthorizationListener_, new JValue (p0));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, id_tryLogin_Lcom_amazon_identity_auth_device_authorization_api_AuthorizationListener_, new JValue (p0));
+		}
+
 	}
 }

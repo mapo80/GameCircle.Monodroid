@@ -70,17 +70,17 @@ namespace Com.Amazon.Identity.Auth.Device.Endpoint {
 		static IntPtr id_createPrimaryToken_Ljava_lang_String_J;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.identity.auth.device.endpoint']/class[@name='ProfileResponse']/method[@name='createPrimaryToken' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='long']]"
 		[Register ("createPrimaryToken", "(Ljava/lang/String;J)Lcom/amazon/identity/auth/device/token/Token;", "GetCreatePrimaryToken_Ljava_lang_String_JHandler")]
-		public override global::Com.Amazon.Identity.Auth.Device.Token.IToken CreatePrimaryToken (string p0, long p1)
+		public override global::tokenImpl.IToken CreatePrimaryToken (string p0, long p1)
 		{
 			if (id_createPrimaryToken_Ljava_lang_String_J == IntPtr.Zero)
 				id_createPrimaryToken_Ljava_lang_String_J = JNIEnv.GetMethodID (class_ref, "createPrimaryToken", "(Ljava/lang/String;J)Lcom/amazon/identity/auth/device/token/Token;");
 			IntPtr native_p0 = JNIEnv.NewString (p0);
 
-			global::Com.Amazon.Identity.Auth.Device.Token.IToken __ret;
+			global::tokenImpl.IToken __ret;
 			if (GetType () == ThresholdType)
-				__ret = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.IToken> (JNIEnv.CallObjectMethod  (Handle, id_createPrimaryToken_Ljava_lang_String_J, new JValue (native_p0), new JValue (p1)), JniHandleOwnership.TransferLocalRef);
+				__ret = global::Java.Lang.Object.GetObject<global::tokenImpl.IToken> (JNIEnv.CallObjectMethod  (Handle, id_createPrimaryToken_Ljava_lang_String_J, new JValue (native_p0), new JValue (p1)), JniHandleOwnership.TransferLocalRef);
 			else
-				__ret = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.IToken> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, id_createPrimaryToken_Ljava_lang_String_J, new JValue (native_p0), new JValue (p1)), JniHandleOwnership.TransferLocalRef);
+				__ret = global::Java.Lang.Object.GetObject<global::tokenImpl.IToken> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, id_createPrimaryToken_Ljava_lang_String_J, new JValue (native_p0), new JValue (p1)), JniHandleOwnership.TransferLocalRef);
 			JNIEnv.DeleteLocalRef (native_p0);
 			return __ret;
 		}

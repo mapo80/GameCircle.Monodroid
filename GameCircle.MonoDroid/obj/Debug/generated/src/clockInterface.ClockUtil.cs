@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 
-namespace Com.Amazon.Ags.Client.Whispersync.Clock {
+namespace clockInterface {
 
 	// Metadata.xml XPath class reference: path="/api/package[@name='com.amazon.ags.client.whispersync.clock']/class[@name='ClockUtil']"
 	[global::Android.Runtime.Register ("com/amazon/ags/client/whispersync/clock/ClockUtil", DoNotGenerateAcw=true)]
@@ -39,7 +39,7 @@ namespace Com.Amazon.Ags.Client.Whispersync.Clock {
 		static IntPtr id_setGlobalClock_Lcom_amazon_ags_client_whispersync_clock_Clock_;
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.client.whispersync.clock']/class[@name='ClockUtil']/method[@name='setGlobalClock' and count(parameter)=1 and parameter[1][@type='com.amazon.ags.client.whispersync.clock.Clock']]"
 		[Register ("setGlobalClock", "(Lcom/amazon/ags/client/whispersync/clock/Clock;)V", "")]
-		public static void SetGlobalClock (global::Com.Amazon.Ags.Client.Whispersync.Clock.IClock p0)
+		public static void SetGlobalClock (global::clockInterface.IClock p0)
 		{
 			if (id_setGlobalClock_Lcom_amazon_ags_client_whispersync_clock_Clock_ == IntPtr.Zero)
 				id_setGlobalClock_Lcom_amazon_ags_client_whispersync_clock_Clock_ = JNIEnv.GetStaticMethodID (class_ref, "setGlobalClock", "(Lcom/amazon/ags/client/whispersync/clock/Clock;)V");

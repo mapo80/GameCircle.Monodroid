@@ -4,3 +4,7 @@
 /Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/bin/Debug/GameCircle.MonoDroid.dll
 /Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/obj/Debug/GameCircle.MonoDroid.dll
 /Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/obj/Debug/GameCircle.MonoDroid.dll.mdb
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/bin/Debug/AmazonInsights.MonoDroid.dll
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/bin/Debug/AmazonInsights.MonoDroid.dll.mdb
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/bin/Debug/AmazonLogin.MonoDroid.dll
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/bin/Debug/AmazonLogin.MonoDroid.dll.mdb

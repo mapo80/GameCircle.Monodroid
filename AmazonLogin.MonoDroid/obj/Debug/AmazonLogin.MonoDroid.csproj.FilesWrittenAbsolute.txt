@@ -1,10 +1,4 @@
-/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.MonoDroid/AmazonLogin.MonoDroid/obj/Debug/MonoAndroid,Version=v4.2.AssemblyAttribute.cs
-/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.MonoDroid/AmazonLogin.MonoDroid/obj/Debug/AmazonLogin.MonoDroid.Jars.login-with-amazon-sdk.jar
-/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.MonoDroid/AmazonLogin.MonoDroid/bin/Debug/AmazonLogin.MonoDroid.dll.mdb
-/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.MonoDroid/AmazonLogin.MonoDroid/bin/Debug/AmazonLogin.MonoDroid.dll
-/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.MonoDroid/AmazonLogin.MonoDroid/obj/Debug/AmazonLogin.MonoDroid.dll
-/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.MonoDroid/AmazonLogin.MonoDroid/obj/Debug/AmazonLogin.MonoDroid.dll.mdb
-/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/AmazonLogin.MonoDroid/obj/Debug/MonoAndroid,Version=v4.2.AssemblyAttribute.cs
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/AmazonLogin.MonoDroid/obj/Debug/MonoAndroid,Version=v2.3.AssemblyAttribute.cs
 /Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/AmazonLogin.MonoDroid/obj/Debug/AmazonLogin.MonoDroid.Jars.login-with-amazon-sdk.jar
 /Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/AmazonLogin.MonoDroid/bin/Debug/AmazonLogin.MonoDroid.dll.mdb
 /Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/AmazonLogin.MonoDroid/bin/Debug/AmazonLogin.MonoDroid.dll

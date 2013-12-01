@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 
-namespace Com.Amazon.Insights.Session {
+namespace sessionImpl {
 
 	// Metadata.xml XPath class reference: path="/api/package[@name='com.amazon.insights.session']/class[@name='SessionStoreException']"
 	[global::Android.Runtime.Register ("com/amazon/insights/session/SessionStoreException", DoNotGenerateAcw=true)]

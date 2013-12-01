@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 
-namespace Com.Amazon.Identity.Auth.Device.Token {
+namespace tokenImpl {
 
 	[Register ("com/amazon/identity/auth/device/token/Token")]
 	public abstract class Token {
@@ -25,31 +25,31 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 	}
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.amazon.identity.auth.device.token']/interface[@name='Token']"
-	[Register ("com/amazon/identity/auth/device/token/Token", "", "Com.Amazon.Identity.Auth.Device.Token.ITokenInvoker")]
+	[Register ("com/amazon/identity/auth/device/token/Token", "", "tokenImpl.ITokenInvoker")]
 	public partial interface IToken : IJavaObject {
 
 		global::System.Collections.Generic.IDictionary<string, string> Data {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.identity.auth.device.token']/interface[@name='Token']/method[@name='getData' and count(parameter)=0]"
-			[Register ("getData", "()Ljava/util/Map;", "GetGetDataHandler:Com.Amazon.Identity.Auth.Device.Token.ITokenInvoker, AmazonLogin.MonoDroid")] get;
+			[Register ("getData", "()Ljava/util/Map;", "GetGetDataHandler:tokenImpl.ITokenInvoker, AmazonLogin.MonoDroid")] get;
 		}
 
 		string DirectedId {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.identity.auth.device.token']/interface[@name='Token']/method[@name='getDirectedId' and count(parameter)=0]"
-			[Register ("getDirectedId", "()Ljava/lang/String;", "GetGetDirectedIdHandler:Com.Amazon.Identity.Auth.Device.Token.ITokenInvoker, AmazonLogin.MonoDroid")] get;
+			[Register ("getDirectedId", "()Ljava/lang/String;", "GetGetDirectedIdHandler:tokenImpl.ITokenInvoker, AmazonLogin.MonoDroid")] get;
 		}
 
 		global::Android.Text.Format.Time LocalTimestamp {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.identity.auth.device.token']/interface[@name='Token']/method[@name='getLocalTimestamp' and count(parameter)=0]"
-			[Register ("getLocalTimestamp", "()Landroid/text/format/Time;", "GetGetLocalTimestampHandler:Com.Amazon.Identity.Auth.Device.Token.ITokenInvoker, AmazonLogin.MonoDroid")] get;
+			[Register ("getLocalTimestamp", "()Landroid/text/format/Time;", "GetGetLocalTimestampHandler:tokenImpl.ITokenInvoker, AmazonLogin.MonoDroid")] get;
 		}
 
 		string Type {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.identity.auth.device.token']/interface[@name='Token']/method[@name='getType' and count(parameter)=0]"
-			[Register ("getType", "()Ljava/lang/String;", "GetGetTypeHandler:Com.Amazon.Identity.Auth.Device.Token.ITokenInvoker, AmazonLogin.MonoDroid")] get;
+			[Register ("getType", "()Ljava/lang/String;", "GetGetTypeHandler:tokenImpl.ITokenInvoker, AmazonLogin.MonoDroid")] get;
 		}
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.identity.auth.device.token']/interface[@name='Token']/method[@name='toString' and count(parameter)=0]"
-		[Register ("toString", "()Ljava/lang/String;", "GetToStringHandler:Com.Amazon.Identity.Auth.Device.Token.ITokenInvoker, AmazonLogin.MonoDroid")]
+		[Register ("toString", "()Ljava/lang/String;", "GetToStringHandler:tokenImpl.ITokenInvoker, AmazonLogin.MonoDroid")]
 		string ToString ();
 
 	}
@@ -107,7 +107,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetData (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.IToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.IToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.IToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.IToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return global::Android.Runtime.JavaDictionary<string, string>.ToLocalJniHandle (__this.Data);
 		}
 #pragma warning restore 0169
@@ -132,7 +132,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetDirectedId (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.IToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.IToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.IToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.IToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewString (__this.DirectedId);
 		}
 #pragma warning restore 0169
@@ -157,7 +157,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetLocalTimestamp (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.IToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.IToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.IToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.IToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.ToLocalJniHandle (__this.LocalTimestamp);
 		}
 #pragma warning restore 0169
@@ -182,7 +182,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_GetType (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.IToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.IToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.IToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.IToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewString (__this.Type);
 		}
 #pragma warning restore 0169
@@ -207,7 +207,7 @@ namespace Com.Amazon.Identity.Auth.Device.Token {
 
 		static IntPtr n_ToString (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Identity.Auth.Device.Token.IToken __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Identity.Auth.Device.Token.IToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::tokenImpl.IToken __this = global::Java.Lang.Object.GetObject<global::tokenImpl.IToken> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return JNIEnv.NewString (__this.ToString ());
 		}
 #pragma warning restore 0169

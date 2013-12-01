@@ -8,7 +8,7 @@ namespace Com.Amazon.Insights.Core {
 	[Register ("com/amazon/insights/core/InsightsContext", "", "Com.Amazon.Insights.Core.IInsightsContextInvoker")]
 	public partial interface IInsightsContext : IJavaObject {
 
-		global::Com.Amazon.Insights.Core.Configuration.IConfiguration Configuration {
+		global::configurationImpl.IConfiguration Configuration {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.insights.core']/interface[@name='InsightsContext']/method[@name='getConfiguration' and count(parameter)=0]"
 			[Register ("getConfiguration", "()Lcom/amazon/insights/core/configuration/Configuration;", "GetGetConfigurationHandler:Com.Amazon.Insights.Core.IInsightsContextInvoker, AmazonInsights.MonoDroid")] get;
 		}
@@ -113,11 +113,11 @@ namespace Com.Amazon.Insights.Core {
 #pragma warning restore 0169
 
 		IntPtr id_getConfiguration;
-		public global::Com.Amazon.Insights.Core.Configuration.IConfiguration Configuration {
+		public global::configurationImpl.IConfiguration Configuration {
 			get {
 				if (id_getConfiguration == IntPtr.Zero)
 					id_getConfiguration = JNIEnv.GetMethodID (class_ref, "getConfiguration", "()Lcom/amazon/insights/core/configuration/Configuration;");
-				return global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.Core.Configuration.IConfiguration> (JNIEnv.CallObjectMethod (Handle, id_getConfiguration), JniHandleOwnership.TransferLocalRef);
+				return global::Java.Lang.Object.GetObject<global::configurationImpl.IConfiguration> (JNIEnv.CallObjectMethod (Handle, id_getConfiguration), JniHandleOwnership.TransferLocalRef);
 			}
 		}
 

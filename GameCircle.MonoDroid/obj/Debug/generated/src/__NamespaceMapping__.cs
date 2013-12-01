@@ -16,7 +16,7 @@
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.ags.client.profiles", Managed="Com.Amazon.Ags.Client.Profiles")]
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.ags.client.session", Managed="Com.Amazon.Ags.Client.Session")]
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.ags.client.whispersync", Managed="Com.Amazon.Ags.Client.Whispersync")]
-[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.ags.client.whispersync.clock", Managed="Com.Amazon.Ags.Client.Whispersync.Clock")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.ags.client.whispersync.clock", Managed="clockInterface")]
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.ags.client.whispersync.event", Managed="Com.Amazon.Ags.Client.Whispersync.Event")]
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.ags.client.whispersync.marshaller", Managed="Com.Amazon.Ags.Client.Whispersync.Marshaller")]
 [assembly:global::Android.Runtime.NamespaceMapping (Java = "com.amazon.ags.client.whispersync.metrics", Managed="Com.Amazon.Ags.Client.Whispersync.Metrics")]

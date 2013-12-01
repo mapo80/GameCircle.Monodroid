@@ -49,6 +49,74 @@ namespace Com.Amazon.Ags.Client.Metrics {
 			JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Landroid_content_Context_, new JValue (p0));
 		}
 
+		static Delegate cb_convertToInsightsEvent_Lcom_amazon_ags_client_metrics_events_GameCircleGenericEvent_;
+#pragma warning disable 0169
+		static Delegate GetConvertToInsightsEvent_Lcom_amazon_ags_client_metrics_events_GameCircleGenericEvent_Handler ()
+		{
+			if (cb_convertToInsightsEvent_Lcom_amazon_ags_client_metrics_events_GameCircleGenericEvent_ == null)
+				cb_convertToInsightsEvent_Lcom_amazon_ags_client_metrics_events_GameCircleGenericEvent_ = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr, IntPtr>) n_ConvertToInsightsEvent_Lcom_amazon_ags_client_metrics_events_GameCircleGenericEvent_);
+			return cb_convertToInsightsEvent_Lcom_amazon_ags_client_metrics_events_GameCircleGenericEvent_;
+		}
+
+		static IntPtr n_ConvertToInsightsEvent_Lcom_amazon_ags_client_metrics_events_GameCircleGenericEvent_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+		{
+			global::Com.Amazon.Ags.Client.Metrics.AmazonInsightsEventCollector __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Client.Metrics.AmazonInsightsEventCollector> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::Com.Amazon.Ags.Client.Metrics.Events.GameCircleGenericEvent p0 = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Client.Metrics.Events.GameCircleGenericEvent> (native_p0, JniHandleOwnership.DoNotTransfer);
+			IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.ConvertToInsightsEvent (p0));
+			return __ret;
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_convertToInsightsEvent_Lcom_amazon_ags_client_metrics_events_GameCircleGenericEvent_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.client.metrics']/class[@name='AmazonInsightsEventCollector']/method[@name='convertToInsightsEvent' and count(parameter)=1 and parameter[1][@type='com.amazon.ags.client.metrics.events.GameCircleGenericEvent']]"
+		[Register ("convertToInsightsEvent", "(Lcom/amazon/ags/client/metrics/events/GameCircleGenericEvent;)Lcom/amazon/insights/Event;", "GetConvertToInsightsEvent_Lcom_amazon_ags_client_metrics_events_GameCircleGenericEvent_Handler")]
+		protected virtual global::Com.Amazon.Insights.IEvent ConvertToInsightsEvent (global::Com.Amazon.Ags.Client.Metrics.Events.GameCircleGenericEvent p0)
+		{
+			if (id_convertToInsightsEvent_Lcom_amazon_ags_client_metrics_events_GameCircleGenericEvent_ == IntPtr.Zero)
+				id_convertToInsightsEvent_Lcom_amazon_ags_client_metrics_events_GameCircleGenericEvent_ = JNIEnv.GetMethodID (class_ref, "convertToInsightsEvent", "(Lcom/amazon/ags/client/metrics/events/GameCircleGenericEvent;)Lcom/amazon/insights/Event;");
+
+			global::Com.Amazon.Insights.IEvent __ret;
+			if (GetType () == ThresholdType)
+				__ret = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.IEvent> (JNIEnv.CallObjectMethod  (Handle, id_convertToInsightsEvent_Lcom_amazon_ags_client_metrics_events_GameCircleGenericEvent_, new JValue (p0)), JniHandleOwnership.TransferLocalRef);
+			else
+				__ret = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.IEvent> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, id_convertToInsightsEvent_Lcom_amazon_ags_client_metrics_events_GameCircleGenericEvent_, new JValue (p0)), JniHandleOwnership.TransferLocalRef);
+			return __ret;
+		}
+
+		static Delegate cb_initialize_Landroid_content_Context_;
+#pragma warning disable 0169
+		static Delegate GetInitialize_Landroid_content_Context_Handler ()
+		{
+			if (cb_initialize_Landroid_content_Context_ == null)
+				cb_initialize_Landroid_content_Context_ = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr, IntPtr>) n_Initialize_Landroid_content_Context_);
+			return cb_initialize_Landroid_content_Context_;
+		}
+
+		static IntPtr n_Initialize_Landroid_content_Context_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+		{
+			global::Com.Amazon.Ags.Client.Metrics.AmazonInsightsEventCollector __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Client.Metrics.AmazonInsightsEventCollector> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::Android.Content.Context p0 = global::Java.Lang.Object.GetObject<global::Android.Content.Context> (native_p0, JniHandleOwnership.DoNotTransfer);
+			IntPtr __ret = JNIEnv.ToLocalJniHandle (__this.Initialize (p0));
+			return __ret;
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_initialize_Landroid_content_Context_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.amazon.ags.client.metrics']/class[@name='AmazonInsightsEventCollector']/method[@name='initialize' and count(parameter)=1 and parameter[1][@type='android.content.Context']]"
+		[Register ("initialize", "(Landroid/content/Context;)Lcom/amazon/insights/EventClient;", "GetInitialize_Landroid_content_Context_Handler")]
+		protected virtual global::Com.Amazon.Insights.IEventClient Initialize (global::Android.Content.Context p0)
+		{
+			if (id_initialize_Landroid_content_Context_ == IntPtr.Zero)
+				id_initialize_Landroid_content_Context_ = JNIEnv.GetMethodID (class_ref, "initialize", "(Landroid/content/Context;)Lcom/amazon/insights/EventClient;");
+
+			global::Com.Amazon.Insights.IEventClient __ret;
+			if (GetType () == ThresholdType)
+				__ret = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.IEventClient> (JNIEnv.CallObjectMethod  (Handle, id_initialize_Landroid_content_Context_, new JValue (p0)), JniHandleOwnership.TransferLocalRef);
+			else
+				__ret = global::Java.Lang.Object.GetObject<global::Com.Amazon.Insights.IEventClient> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, id_initialize_Landroid_content_Context_, new JValue (p0)), JniHandleOwnership.TransferLocalRef);
+			return __ret;
+		}
+
 		static Delegate cb_pauseInsightsSession;
 #pragma warning disable 0169
 		static Delegate GetPauseInsightsSessionHandler ()

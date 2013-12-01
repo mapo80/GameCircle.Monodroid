@@ -1,13 +1,8 @@
 <metadata>
-	<!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  <attr path="/api/package[@name='com.amazon.ags.html5.factory']" name="AGSClientInstanceCoordinator">Test</attr>
-  <attr path="/api/package[@name='com.amazon.ags.html5.factory']/class[@name='AGSClientInstanceCoordinator']">Test</attr>
-  -->
+
+
+
+
 <!--  <attr
           path="/api/package[@name='org.achartengine.tools']/class[@name='Pan']"
           name="managedName"
@@ -32,6 +27,9 @@
 <attr
 	path="/api/package[@name='com.amazon.ags.html5.comm']/class[@name='NetworkCallFactory']/method[@name='handleMessage']" 
 	name="visibility">protected</attr>
+<!--<attr
+	path="/api/package[@name='com.amazon.ags.html5.util']/class[@name='GlobalState']/interface[@name='GlobalStateListener']" 
+	name="visibility">public</attr>-->
 
 <!--	<attr
 	path="/api/package[@name='com.amazon.ags.api']/interface[@name='AmazonGamesCallback']" 
@@ -42,6 +40,21 @@
 	<attr path="/api/package[@name='com.amazon.ags.html5.content']/class[@name='ContentVersion']/method[@name='compareTo']/parameter[1]" name="managedType">Java.Lang.Object</attr>
 	<attr path="/api/package[@name='com.amazon.ags.client.whispersync']/class[@name='GameDataSingleMap']" name="visibility">protected</attr>
 	<attr path="/api/package[@name='com.amazon.ags.client.whispersync.model']/interface[@name='Mergeable']" name="visibility">public</attr>
+
+	<remove-node path="/api/package[@name='com.amazon.ags.client.whispersync.model']/class[@name='Element']/field[@name='metadata']" />
+	<remove-node path="/api/package[@name='com.amazon.ags.client.whispersync.model']/class[@name='Element']/field[@name='timestamp']" />
+	<remove-node path="/api/package[@name='com.amazon.ags.client.whispersync.model']/class[@name='LatestStringList']/field[@name='maxSize']" />
+	<remove-node path="/api/package[@name='com.amazon.ags.client.whispersync.model']/class[@name='LatestStringList']/field[@name='state']" />
+	<remove-node path="/api/package[@name='com.amazon.ags.client.whispersync.model']/class[@name='NumberList']/field[@name='maxSize']" />
+	<remove-node path="/api/package[@name='com.amazon.ags.client.whispersync.model']/class[@name='NumberList']/field[@name='state']" />
+	<remove-node path="/api/package[@name='com.amazon.ags.client.whispersync.model']/class[@name='StringElement']/field[@name='value']" />
+	<remove-node path="/api/package[@name='com.amazon.ags.html5.overlay.toasts']/class[@name='ClickableToastImpl']/field[@name='toastParams']" />
+
+	<attr
+		path="/api/package[@name='com.amazon.ags.client.whispersync.clock']"
+		name="managedName">clockInterface</attr>
+<!--	<remove-node path="/api/package[@name='com.amazon.ags.client.whispersync.clock']/interface[@name='Clock']" />-->
+
 
 <!--	<add-node path="/api/package[@name='com.amazon.ags.api']/class[@name='AmazonGamesClient']">
     </add-node>-->

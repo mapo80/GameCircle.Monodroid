@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using Android.Runtime;
 
-namespace Com.Amazon.Ags.Client.Whispersync.Clock {
+namespace clockInterface {
 
 	// Metadata.xml XPath class reference: path="/api/package[@name='com.amazon.ags.client.whispersync.clock']/class[@name='LocalClock']"
 	[global::Android.Runtime.Register ("com/amazon/ags/client/whispersync/clock/LocalClock", DoNotGenerateAcw=true)]
-	public partial class LocalClock : global::Java.Lang.Object, global::Com.Amazon.Ags.Client.Whispersync.Clock.IClock {
+	public partial class LocalClock : global::Java.Lang.Object, global::clockInterface.IClock {
 
 		internal static IntPtr java_class_handle;
 		internal static IntPtr class_ref {
@@ -60,7 +60,7 @@ namespace Com.Amazon.Ags.Client.Whispersync.Clock {
 
 		static long n_GetCurrentTimeSeconds (IntPtr jnienv, IntPtr native__this)
 		{
-			global::Com.Amazon.Ags.Client.Whispersync.Clock.LocalClock __this = global::Java.Lang.Object.GetObject<global::Com.Amazon.Ags.Client.Whispersync.Clock.LocalClock> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::clockInterface.LocalClock __this = global::Java.Lang.Object.GetObject<global::clockInterface.LocalClock> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			return __this.CurrentTimeSeconds;
 		}
 #pragma warning restore 0169
