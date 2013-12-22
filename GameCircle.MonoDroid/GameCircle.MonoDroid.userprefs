@@ -1,8 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../AmazonLogin.MonoDroid/Transforms/Metadata.xml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../AmazonInsights.MonoDroid/Transforms/Metadata.xml">
     <Files>
-      <File FileName="../AmazonLogin.MonoDroid/Transforms/Metadata.xml" Line="9" Column="1" />
+      <File FileName="../AmazonInsights.MonoDroid/Transforms/Metadata.xml" Line="17" Column="136" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

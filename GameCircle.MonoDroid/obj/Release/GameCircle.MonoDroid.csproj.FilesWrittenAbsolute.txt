@@ -1,0 +1,10 @@
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/obj/Release/MonoAndroid,Version=v2.3.AssemblyAttribute.cs
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/obj/Release/GameCircle.MonoDroid.Jars.gamecirclesdk.jar
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/bin/Release/GameCircle.MonoDroid.dll.mdb
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/bin/Release/GameCircle.MonoDroid.dll
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/obj/Release/GameCircle.MonoDroid.dll
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/obj/Release/GameCircle.MonoDroid.dll.mdb
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/bin/Release/AmazonInsights.MonoDroid.dll
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/bin/Release/AmazonInsights.MonoDroid.dll.mdb
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/bin/Release/AmazonLogin.MonoDroid.dll
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/GameCircle.MonoDroid/bin/Release/AmazonLogin.MonoDroid.dll.mdb

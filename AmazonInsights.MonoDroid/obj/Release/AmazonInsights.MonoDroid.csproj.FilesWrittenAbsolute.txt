@@ -1,0 +1,7 @@
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/AmazonInsights.MonoDroid/obj/Release/MonoAndroid,Version=v2.3.AssemblyAttribute.cs
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/AmazonInsights.MonoDroid/obj/Release/AmazonInsights.MonoDroid.Jars.AmazonInsights-android-sdk-2.0.24.jar
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/AmazonInsights.MonoDroid/bin/Release/AmazonInsights.MonoDroid.dll.mdb
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/AmazonInsights.MonoDroid/bin/Release/AmazonInsights.MonoDroid.dll
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/AmazonInsights.MonoDroid/obj/Release/AmazonInsights.MonoDroid.dll
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/AmazonInsights.MonoDroid/obj/Release/AmazonInsights.MonoDroid.dll.mdb
+/Users/matteo/Dropbox/Projects/CrosswrdAndroid/GameCircle.Monodroid/AmazonInsights.MonoDroid/obj/Release/AmazonInsights.MonoDroid.Jars.AmazonInsights-android-sdk-2.1.16.jar

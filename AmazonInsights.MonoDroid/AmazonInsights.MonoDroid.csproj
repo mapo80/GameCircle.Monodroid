@@ -56,6 +56,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Xamarin.Android.Bindings.targets" />
   <ItemGroup>
-    <EmbeddedJar Include="Jars\AmazonInsights-android-sdk-2.0.24.jar" />
+    <EmbeddedJar Include="Jars\AmazonInsights-android-sdk-2.1.16.jar" />
   </ItemGroup>
 </Project>

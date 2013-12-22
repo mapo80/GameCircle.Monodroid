@@ -38,4 +38,8 @@
 	<attr
 		path="/api/package[@name='com.amazon.insights.session']"
 		name="managedName">sessionImpl</attr>
+
+<!--	<attr 
+	path="/api/package[@name='com.openfeint.internal']/class[@name='OpenFeintInternal']/method[@name='getClient']" 
+	name="return">org.apache.http.impl.client.AbstractHttpClient</attr>-->
 </metadata>

@@ -1,0 +1,5 @@
+com.amazon.insights.abtest.DefaultVariation$AllocationSource:Com.Amazon.Insights.Abtest:DefaultVariation.AllocationSource
+com.amazon.insights.core.http.HttpClient$HttpMethod:Com.Amazon.Insights.Core.Http:HttpClient.HttpMethod
+com.amazon.insights.core.log.Logger$LogLevel:Com.Amazon.Insights.Core.Log:Logger.LogLevel
+com.amazon.insights.core.system.AndroidConnectivity$Network:com.amazon.insights.core.system.amazon:AndroidConnectivity.Network
+com.amazon.insights.session.client.DefaultSessionClient$SessionState:Com.Amazon.Insights.Session.Client:DefaultSessionClient.SessionState
